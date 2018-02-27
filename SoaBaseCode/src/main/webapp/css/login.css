@@ -1,4 +1,3 @@
-@import "bourbon";
 
 	body {
 		background-color: #1093a7;
@@ -34,7 +33,7 @@
 	.form-control {
 	  position: relative;
 	  font-size: 14px;
-	  color: #ffffff;
+	  color: #2c2c2c;
 	  height: auto;
 	  padding: 10px;
 	  box-shadow: none;
