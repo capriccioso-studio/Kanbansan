@@ -32,7 +32,7 @@ public interface UserDao {
 	 * @param pUser
 	 * @return
 	 */
-	public int deleteUser(EntityManager pEM, User pUser);
+	public boolean deleteUser(EntityManager pEM, User pUser);
 	
 	/**
 	 * 
