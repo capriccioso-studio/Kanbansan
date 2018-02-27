@@ -12,31 +12,42 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Id;
 
-
 @Entity
-@Table(name="Task_log")
-public class Task_log implements Serializable{
+@Table(name = "comment")
+public class Comment implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@Column(nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int task_log_id;
+	private int comment_id;
 	
-	@ManyToOne(cascade= CascadeType.ALL)
+	private String comment;
+
+	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="task_id")
 	private Task task_id;
 	
-	private String status;
-
+	@ManyToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="project_member_id")
+	private Project_Member project_member_id;
 	
-	public int getTask_log_id() {
-		return task_log_id;
+	
+	public int getComment_id() {
+		return comment_id;
 	}
 
-	public void setTask_log_id(int task_log_id) {
-		this.task_log_id = task_log_id;
+	public void setComment_id(int comment_id) {
+		this.comment_id = comment_id;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
 	}
 
 	public Task getTask_id() {
@@ -47,21 +58,14 @@ public class Task_log implements Serializable{
 		this.task_id = task_id;
 	}
 
-	public String getStatus() {
-		return status;
+	public Project_Member getProject_member_id() {
+		return project_member_id;
 	}
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	
-	@Override
-	public String toString(){
-		return "Task_Log {" + "task_log_id = " + task_log_id +
-				", task_id = " + task_id + 
-				", status = " + status + "}";
-				
+	public void setProject_member_id(Project_Member project_member_id) {
+		this.project_member_id = project_member_id;
 	}
 	
 	
+
 }

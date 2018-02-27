@@ -1,15 +1,12 @@
 package ph.com.alliance.entity;
 
 import java.io.Serializable;
-
-
-
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 //import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,6 +24,7 @@ public class Task implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
+	@Column(nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int task_id;
 	private String taskName;
@@ -43,15 +41,15 @@ public class Task implements Serializable {
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="parent_task_id")
 	private Task parent_task;
-	
-	@OneToMany(mappedBy="parent_task")
-	private List<Task> children;
-
-
 
 	@ManyToOne
 	@JoinColumn(name="project_id", nullable = false)
 	private Project project_id;
+	
+	@ManyToOne
+	@JoinColumn(name="project_member_id")
+	private Project_Member project_member_id;
+	
 	
 	
 //Constructors
