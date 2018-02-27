@@ -115,7 +115,7 @@ public class DBTransactionTestServiceImpl implements DBTransactionTestService {
 	 * @see ph.com.alliance.service.DBTransactionTestService#selectUsers(java.lang.String)
 	 */
 	@Override
-	public List<User> selectUsers(String pKey) {
+	public List<User> selectUsers(int pKey) {
 		// TODO Auto-generated method stub
 		return null;
 	}

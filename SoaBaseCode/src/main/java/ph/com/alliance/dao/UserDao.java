@@ -40,7 +40,7 @@ public interface UserDao {
 	 * @param pUser
 	 * @return
 	 */
-	public User selectUser(EntityManager pEM, String pUid);
+	public User selectUser(EntityManager pEM, int pUid);
 	
 	/**
 	 * 
@@ -48,7 +48,7 @@ public interface UserDao {
 	 * @param pKey
 	 * @return
 	 */
-	public List<User> selectUsers(EntityManager pEM, String pKey);
+	public List<User> selectUsers(EntityManager pEM, int pKey);
 	
 	/**
 	 * 

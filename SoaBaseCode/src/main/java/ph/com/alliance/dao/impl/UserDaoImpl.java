@@ -117,7 +117,7 @@ public class UserDaoImpl implements UserDao {
 	 * @see ph.com.alliance.dao.UserDao#selectUser(javax.persistence.EntityManager, java.lang.String)
 	 */
 	@Override
-	public User selectUser(EntityManager pEM, String pUid) {
+	public User selectUser(EntityManager pEM, int pUid) {
 		User user = null;
 				
 		try {
@@ -136,7 +136,7 @@ public class UserDaoImpl implements UserDao {
 	 * @see ph.com.alliance.dao.UserDao#selectUsers(javax.persistence.EntityManager, java.lang.String)
 	 */
 	@Override
-	public List<User> selectUsers(EntityManager pEM, String pKey) {
+	public List<User> selectUsers(EntityManager pEM, int pKey) {
 
 		return null;
 	}
