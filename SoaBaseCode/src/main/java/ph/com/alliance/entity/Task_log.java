@@ -27,6 +27,39 @@ public class Task_log implements Serializable{
 	private Task task_id;
 	
 	private String status;
+
+	
+	public int getTask_log_id() {
+		return task_log_id;
+	}
+
+	public void setTask_log_id(int task_log_id) {
+		this.task_log_id = task_log_id;
+	}
+
+	public Task getTask_id() {
+		return task_id;
+	}
+
+	public void setTask_id(Task task_id) {
+		this.task_id = task_id;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	@Override
+	public String toString(){
+		return "Task_Log {" + "task_log_id = " + task_log_id +
+				", task_id = " + task_id + 
+				", status = " + status + "}";
+				
+	}
 	
 	
 }
