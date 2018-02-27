@@ -87,12 +87,29 @@ public class UserDaoImpl implements UserDao {
 	 * @see ph.com.alliance.dao.UserDao#deleteUser(javax.persistence.EntityManager, ph.com.alliance.entity.User)
 	 */
 	@Override
-	public int deleteUser(EntityManager pEM, User pUser) {
+	public boolean deleteUser(EntityManager pEM, User pUser) {
 		// TODO Auto-generated method stub
+		boolean success = true;
+		try{
+			pEM.remove(pUser);
+		} catch (EntityExistsException ee) {
+			// instantiate MyException class here and set custom error codes common to all
+			// ie. throw new MyException(<ERROR CODE HERE>, <ERROR MESSAGE HERE>)
+			ee.getMessage();
+			success = false;
+		} catch (IllegalArgumentException iae) {
+			// instantiate MyException class here and set custom error codes common to all
+			// ie. throw new MyException(<ERROR CODE HERE>, <ERROR MESSAGE HERE>)
+			iae.getMessage();
+			success = false;
+		} catch (TransactionRequiredException trxe) {
+			// instantiate MyException class here and set custom error codes common to all
+			// ie. throw new MyException(<ERROR CODE HERE>, <ERROR MESSAGE HERE>)
+			trxe.getMessage();
+			success = false;
+		}
 		
-		
-		
-		return 0;
+		return success;
 	}
 
 	/*
