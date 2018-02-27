@@ -1,34 +1,45 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<!doctype html>
-<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="../img/kanbansan-favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title> Kanbansan </title>
+    <title>Material Dashboard by Creative Tim</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <link href="../css/login.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS     -->
+    <link href="../lib/css/bootstrap.min.css" rel="stylesheet" />
+    <!--  Material Dashboard CSS    -->
+    <link href="../lib/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../lib/css/demo.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 </head>
-    <body>
-        <div class="wrapper">
-            <form class="form-signin">       
-                <h2 class="form-signin-heading">Log In</h2>
-                    <p class = "input-title"> 
-                            EMAIL ADDRESS 
-                    </p>
-                    <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-                    <p class = "input-title"> 
-                            PASSWORD 
-                    </p>
-                    <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-                        <label class="checkbox">
-                               <br> <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-                        </label>                   
-                   <br> <button class="button-login" type="submit">Log In</button>   
-            </form>
-        </div>
-    </body>
-</html>
+
+<body>
+</body>
+
+<!--   Core JS Files   -->
+<script src="../lib/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="../lib/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../lib/js/material.min.js" type="text/javascript"></script>
+<!--  Charts Plugin -->
+<script src="../lib/js/chartist.min.js"></script>
+<!--  Dynamic Elements plugin -->
+<script src="../lib/js/arrive.min.js"></script>
+<!--  PerfectScrollbar Library -->
+<script src="../lib/js/perfect-scrollbar.jquery.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../lib/js/bootstrap-notify.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Material Dashboard javascript methods -->
+<script src="../lib/js/material-dashboard.js?v=1.2.0"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="../lib/js/demo.js"></script>

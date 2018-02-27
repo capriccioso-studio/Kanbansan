@@ -37,10 +37,10 @@ public class ModuleViewController {
      * @param map
      * @return
      */
-    @RequestMapping(value = "/messages", method = RequestMethod.GET)
+    @RequestMapping(value = "/Register", method = RequestMethod.GET)
     public String viewMessages(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
     	System.out.println("@/modulename/messages MODULE VIEW CONTROLLER CALLED.");
-        return "messages";
+        return "/Register";
     }
     
     /**

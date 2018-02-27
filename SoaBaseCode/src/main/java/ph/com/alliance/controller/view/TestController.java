@@ -101,14 +101,14 @@ public class TestController {
     	
     	Project pProject = new Project();
     	
-    	pProject.setProject_id("0227044118878");
+    	pProject.setProject_id(generatePrimaryKey());
     	pProject.setProjectDescription("Sample Proejct Deptsdsd");
     	pProject.setProjectName("3333");
     	System.out.println(pProject.getProjectName());
     	
-    	//userDBTransactionService.createProject(pProject);
+    	userDBTransactionService.createProject(pProject);
     	
-    	userDBTransactionService.deleteProject(pProject);
+    	//userDBTransactionService.deleteProject(pProject);
     	
     	
     	
@@ -153,7 +153,6 @@ public class TestController {
 		
 		TaskLog log = new TaskLog(generatePrimaryKey(),"Pending",currentDateTime().toString(),task);
 		taskLogDBTransactionService.addTaskLog(log, task.getId());*/
-    	
     	
 
     }

@@ -42,7 +42,7 @@ function bindUserFormEvents() {
 		$('#lnk_messages').addClass("active");
 		
 		$.ajax({
-			url: ROOT_URL + 'modulename/messages',
+			url: ROOT_URL + 'modulename/Register',
 			type: "get",
 			dataType: "text"
 		}).done(function(data) {
