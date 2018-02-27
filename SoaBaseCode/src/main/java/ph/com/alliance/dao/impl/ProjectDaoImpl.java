@@ -59,10 +59,11 @@ public class ProjectDaoImpl implements ProjectDao{
 	}
 	
 	@Override
-	public int deleteProject(EntityManager pEM, Project pProject)
+	public boolean deleteProject(EntityManager pEM, Project pProject)
 	{
+		boolean success = true;
 		pEM.remove(pProject);
-		return 0;
+		return success;
 	}
 	
 	@Override
