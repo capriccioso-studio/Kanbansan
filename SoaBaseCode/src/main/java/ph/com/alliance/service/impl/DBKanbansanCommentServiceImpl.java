@@ -4,36 +4,40 @@ package ph.com.alliance.service.impl;
 import javax.persistence.EntityManager;
 //import javax.validation.ConstraintViolationException;
 
+
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.stereotype.Service;
 
-import ph.com.alliance.dao.ProjectDao;
-import ph.com.alliance.entity.Project;
-//import ph.com.alliance.entity.User;
-import ph.com.alliance.service.DBKanbansanProjectService;
 
-@Service("dbKanbansanProjectService")
-public class DBKanbansanProjectServiceImpl implements DBKanbansanProjectService{
+
+
+import ph.com.alliance.dao.CommentDao;
+import ph.com.alliance.entity.Comment;
+import ph.com.alliance.service.DBKanbansanCommentService;
+
+@Service("dbKanbansanCommentService")
+public class DBKanbansanCommentServiceImpl implements DBKanbansanCommentService {
 	
 	@Autowired
-	private ProjectDao projectDao;
+	private CommentDao commentDao;
 	
 	@Autowired
 	private JpaTransactionManager transactionManager;
 	
-
+	
 	@Override
-	public boolean createProject(Project pProject)
+	public boolean createComment(Comment pComment)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
 		boolean result = false;
 		
 		em.getTransaction().begin();
 		try {
-			result = projectDao.createProject(em, pProject);
+			result = commentDao.createComment(em, pComment);
 			em.getTransaction().commit();
-			System.out.println("FUCK");
 		} catch (Exception e) {
 			e.printStackTrace();
 			result = false;
@@ -50,15 +54,15 @@ public class DBKanbansanProjectServiceImpl implements DBKanbansanProjectService{
 	}
 	
 	@Override
-	public Project updateProject(Project pProject)
+	public Comment updateComment(Comment pComment)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		Project result = null;
+		Comment result = null;
 		
 		em.getTransaction().begin();
 		
 		try {
-			result = projectDao.updateProject(em, pProject);
+			result = commentDao.updateComment(em, pComment);
 			em.getTransaction().commit();
 		} catch (Exception e) {
 			e.getMessage();
@@ -75,19 +79,11 @@ public class DBKanbansanProjectServiceImpl implements DBKanbansanProjectService{
 	}
 	
 	@Override
-	public void deleteProject(Project pProject)
+	public void deleteComment(Comment pComment)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		projectDao.deleteProject(em, pProject);
+		commentDao.deleteComment(em, pComment);
 		em.getTransaction().commit();
 	}
-	
-	@Override
-	public Project selectProject(Project pProject)
-	{
-		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		return projectDao.selectProject(em, pProject.getProject_id());
-	}
-
 
 }

@@ -6,20 +6,21 @@ import javax.persistence.TransactionRequiredException;
 
 import org.springframework.stereotype.Repository;
 
-import ph.com.alliance.dao.ProjectDao;
-import ph.com.alliance.entity.Project;
+import ph.com.alliance.dao.CommentDao;
+import ph.com.alliance.entity.Comment;
 
-@Repository("projectDao")
-public class ProjectDaoImpl implements ProjectDao{
 
+@Repository("commentDao")
+public class CommentDaoImpl implements CommentDao {
+	
 	@Override
-	public boolean createProject(EntityManager pEM, Project pProject)
+	public boolean createComment(EntityManager pEM, Comment pComment)
 	{
 		boolean success = true;
 		
 		try{
 			
-			pEM.persist(pProject);
+			pEM.persist(pComment);
 			
 		} catch (EntityExistsException ee) {
 			// instantiate MyException class here and set custom error codes common to all
@@ -38,48 +39,32 @@ public class ProjectDaoImpl implements ProjectDao{
 			success = false;
 		}
 		
-		System.out.println("here " + success);
-		
 		return success;
 		
 	}
 	
 	@Override
-	public Project updateProject(EntityManager pEM, Project pProject)
+	public Comment updateComment(EntityManager pEM, Comment pComment)
 	{
-		Project project = null;
+		Comment comment = null;
 		
 		try {
-			project = pEM.merge(pProject);
+			comment = pEM.merge(pComment);
 		} catch (IllegalArgumentException iae) {
 			iae.getMessage();
 		} catch (TransactionRequiredException trxe) {
 			trxe.getMessage();
 		}
 		
-		return project;
+		return comment;
 	}
 	
 	@Override
-	public int deleteProject(EntityManager pEM, Project pProject)
+	public int deleteComment(EntityManager pEM, Comment pComment)
 	{
-		pEM.remove(pProject);
+		pEM.remove(pComment);
 		return 0;
 	}
 	
-	@Override
-	public Project selectProject(EntityManager pEM, String pProject_id)
-	{
-		Project project =null;
-		
-		try {
-			
-			project = pEM.find(Project.class, pProject_id);
-			
-		} catch (IllegalArgumentException iae) {
-			iae.getMessage();
-		}
-		
-		return project;
-	}
+
 }

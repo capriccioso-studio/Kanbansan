@@ -14,7 +14,7 @@ public interface ProjectDao {
 	
 	public int deleteProject(EntityManager pEM, Project pProject);
 		
-	public Project selectProject(EntityManager pEM, int pProject_id);
+	public Project selectProject(EntityManager pEM, String pProject_id);
 	
 	//Add Members
 

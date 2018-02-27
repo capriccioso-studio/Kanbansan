@@ -17,19 +17,18 @@ public class Project implements Serializable{
 	
 	@Id
 	@Column(nullable = false)
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int project_id;
+	private String project_id;
 	
 	private String projectName;
 	private String projectDescription;
 	
 	//Timestamp of date created
 	
-	public int getProject_id() {
+	public String getProject_id() {
 		return project_id;
 	}
 
-	public void setProject_id(int project_id) {
+	public void setProject_id(String project_id) {
 		this.project_id = project_id;
 	}
 
