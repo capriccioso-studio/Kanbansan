@@ -1,7 +1,10 @@
 package ph.com.alliance.entity;
 import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import javax.persistence.Id;
 /**
@@ -16,12 +19,14 @@ public class User implements Serializable {
     
     @Id
     @Column(name="user_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String user_id;
     
     private String firstName;
     private String lastName;
     private String email;
     private String password;
+    
     
     public String getLastName() {
         return lastName;
