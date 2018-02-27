@@ -1,38 +1,34 @@
 package ph.com.alliance.service.impl;
 
-//import java.util.List;
-
 import javax.persistence.EntityManager;
-//import javax.validation.ConstraintViolationException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.stereotype.Service;
 
-import ph.com.alliance.dao.ProjectDao;
-import ph.com.alliance.entity.Project;
-//import ph.com.alliance.entity.User;
-import ph.com.alliance.service.DBKanbansanService;
+import ph.com.alliance.dao.TaskDao;
+import ph.com.alliance.entity.Task;
+import ph.com.alliance.service.DBKanbansanTaskService;
 
-@Service("dbKanbansanService")
-public class DBKanbansanServiceImpl implements DBKanbansanService{
-	
+@Service("dbKanbansanTaskService")
+public class DBKanbansanTaskServiceImpl implements DBKanbansanTaskService {
+
 	@Autowired
-	private ProjectDao projectDao;
+	private TaskDao taskDao;
 	
 	@Autowired
 	private JpaTransactionManager transactionManager;
 	
 
 	@Override
-	public boolean createProject(Project pProject)
+	public boolean createTask(Task pTask)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
 		boolean result = false;
 		
 		em.getTransaction().begin();
 		try {
-			result = projectDao.createProject(em, pProject);
+			result = taskDao.createTask(em, pTask);
 			em.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -50,15 +46,15 @@ public class DBKanbansanServiceImpl implements DBKanbansanService{
 	}
 	
 	@Override
-	public Project updateProject(Project pProject)
+	public Task updateTask(Task pTask)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		Project result = null;
+		Task result = null;
 		
 		em.getTransaction().begin();
 		
 		try {
-			result = projectDao.updateProject(em, pProject);
+			result = taskDao.updateTask(em, pTask);
 			em.getTransaction().commit();
 		} catch (Exception e) {
 			e.getMessage();
@@ -75,19 +71,17 @@ public class DBKanbansanServiceImpl implements DBKanbansanService{
 	}
 	
 	@Override
-	public void deleteProject(Project pProject)
+	public void deleteTask(Task pTask)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		projectDao.deleteProject(em, pProject);
+		taskDao.deleteTask(em, pTask);
 		em.getTransaction().commit();
 	}
 	
 	@Override
-	public Project selectProject(Project pProject)
+	public Task selectTask(Task pTask)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		return projectDao.selectProject(em, pProject.getProject_id());
+		return taskDao.selectTask(em, pTask.getTask_id());
 	}
-
-
 }
