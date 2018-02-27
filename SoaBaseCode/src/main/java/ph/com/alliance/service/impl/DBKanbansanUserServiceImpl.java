@@ -1,5 +1,7 @@
 package ph.com.alliance.service.impl;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +14,7 @@ import ph.com.alliance.entity.Task;
 import ph.com.alliance.entity.User;
 import ph.com.alliance.service.DBKanbansanUserService;
 
-
+@Service("dbKanbansanUserService")
 public class DBKanbansanUserServiceImpl implements DBKanbansanUserService {
 
 	@Autowired
@@ -29,7 +31,7 @@ public class DBKanbansanUserServiceImpl implements DBKanbansanUserService {
 		
 		em.getTransaction().begin();
 		try {
-			result = userDao.createTask(em, pUser);
+			result = userDao.createUser(em, pUser);
 			em.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -72,13 +74,38 @@ public class DBKanbansanUserServiceImpl implements DBKanbansanUserService {
 	}
 	
 	@Override
-	public int deleteUser(User pUser)
+	public boolean deleteUser(User pUser)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
 		userDao.deleteUser(em, pUser);
 		em.getTransaction().commit();
 		
-		return 0;
+		return true;
+	}
+
+	@Override
+	public User selectUser(User pUser) {
+		// TODO Auto-generated method stub
+		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
+		return userDao.selectUser(em, pUser.getUser_id());
+	}
+
+	@Override
+	public List<User> selectUsers(User pUser) {
+		// TODO Auto-generated method stub
+		//EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
+		//return userDao.selectUsers(em, pUser.getUser_id());
+		
+		return null;
+	}
+
+	@Override
+	public List<User> selectAllUsers(User pUser) {
+		// TODO Auto-generated method stub
+		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
+		return userDao.selectAllUsers(em);
+		
+		//return null;
 	}
 	
 }
