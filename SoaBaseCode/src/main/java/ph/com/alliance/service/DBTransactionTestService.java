@@ -36,7 +36,7 @@ public interface DBTransactionTestService {
 	 * 
 	 * @return
 	 */
-	public List<User> selectUsers(String pKey);
+	public List<User> selectUsers(int pKey);
 	
 	/**
 	 * 

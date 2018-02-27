@@ -18,9 +18,8 @@ public class User implements Serializable {
     private static final long serialVersionUID = 1L;
     
     @Id
-    @Column(name="user_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String user_id;
+    private int user_id;
     
     private String firstName;
     private String lastName;
@@ -40,10 +39,10 @@ public class User implements Serializable {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getUser_id() {
+    public int getUser_id() {
         return user_id;
     }
-    public void setUser_id(String user_id) {
+    public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
     

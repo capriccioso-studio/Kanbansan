@@ -67,7 +67,7 @@ public class ModuleAPIController {
      */
     @RequestMapping(value = "/searchUser/{uid}", method = RequestMethod.GET)
     @ResponseBody
-    public UserModel searchUser(@PathVariable("uid") String uid) {
+    public UserModel searchUser(@PathVariable("uid") int uid) {
     	User u = new User();
     	
     	u.setUser_id(uid);
