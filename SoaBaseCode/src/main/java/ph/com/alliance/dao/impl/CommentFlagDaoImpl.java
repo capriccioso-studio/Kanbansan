@@ -6,20 +6,22 @@ import javax.persistence.TransactionRequiredException;
 
 import org.springframework.stereotype.Repository;
 
-import ph.com.alliance.dao.ProjectDao;
+import ph.com.alliance.dao.CommentFlagDao;
 import ph.com.alliance.entity.Project;
+import ph.com.alliance.entity.Comment_Flag;
 
-@Repository("projectDao")
-public class ProjectDaoImpl implements ProjectDao{
+@Repository("commentFlagDao")
+public class CommentFlagDaoImpl implements CommentFlagDao {
 
 	@Override
-	public boolean createProject(EntityManager pEM, Project pProject)
-	{
+	public boolean createCommentFlag(EntityManager pEM,
+			Comment_Flag pCommentFlag) {
+		
 		boolean success = true;
 		
 		try{
 			
-			pEM.persist(pProject);
+			pEM.persist(pCommentFlag);
 			
 		} catch (EntityExistsException ee) {
 			// instantiate MyException class here and set custom error codes common to all
@@ -38,49 +40,34 @@ public class ProjectDaoImpl implements ProjectDao{
 			success = false;
 		}
 		
-		System.out.println("here " + success);
-		
 		return success;
-		
 	}
-	
+
 	@Override
-	public Project updateProject(EntityManager pEM, Project pProject)
-	{
-		Project project = null;
+	public boolean deleteCommentFlag(EntityManager pEM,
+			Comment_Flag pCommentFlag) {
 		
-		try {
-			project = pEM.merge(pProject);
-		} catch (IllegalArgumentException iae) {
-			iae.getMessage();
-		} catch (TransactionRequiredException trxe) {
-			trxe.getMessage();
-		}
-		
-		return project;
-	}
-	
-	@Override
-	public boolean deleteProject(EntityManager pEM, Project pProject)
-	{
 		boolean success = true;
-		pEM.remove(pProject);
-		return success;
-	}
-	
-	@Override
-	public Project selectProject(EntityManager pEM, String pProject_id)
-	{
-		Project project =null;
-		
-		try {
-			
-			project = pEM.find(Project.class, pProject_id);
-			
+		try{
+			pEM.remove(pCommentFlag);
+		} catch (EntityExistsException ee) {
+			// instantiate MyException class here and set custom error codes common to all
+			// ie. throw new MyException(<ERROR CODE HERE>, <ERROR MESSAGE HERE>)
+			ee.getMessage();
+			success = false;
 		} catch (IllegalArgumentException iae) {
+			// instantiate MyException class here and set custom error codes common to all
+			// ie. throw new MyException(<ERROR CODE HERE>, <ERROR MESSAGE HERE>)
 			iae.getMessage();
+			success = false;
+		} catch (TransactionRequiredException trxe) {
+			// instantiate MyException class here and set custom error codes common to all
+			// ie. throw new MyException(<ERROR CODE HERE>, <ERROR MESSAGE HERE>)
+			trxe.getMessage();
+			success = false;
 		}
 		
-		return project;
+		return success;
 	}
+
 }

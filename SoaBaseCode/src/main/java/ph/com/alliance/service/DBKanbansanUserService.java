@@ -10,7 +10,7 @@ public interface DBKanbansanUserService {
 	
 	public User updateUser(User pUser);
 	
-	public boolean deleteUser(User pUser);
+	public void deleteUser(User pUser);
 	
 	public User selectUser(User pUser);
 	

@@ -12,7 +12,7 @@ public interface ProjectDao {
 	
 	public Project updateProject(EntityManager pEM, Project pProject);
 	
-	public int deleteProject(EntityManager pEM, Project pProject);
+	public boolean deleteProject(EntityManager pEM, Project pProject);
 		
 	public Project selectProject(EntityManager pEM, String pProject_id);
 	
