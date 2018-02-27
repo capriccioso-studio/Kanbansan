@@ -14,6 +14,4 @@ public interface DBKanbansanProjectService {
 	
 	public Project selectProject(Project pProject);
 	
-
-
 }

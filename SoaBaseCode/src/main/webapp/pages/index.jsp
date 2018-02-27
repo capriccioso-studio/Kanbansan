@@ -7,6 +7,7 @@
 <head>
  <title>JAVA BASE CODE BETA 1.0</title>
 	<link rel="stylesheet" href="css/styles.css" />
+	
 	<link rel="stylesheet" href="lib/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/media-queries.css" />
   	<meta name="viewport" content="width=device-width" /> 	
