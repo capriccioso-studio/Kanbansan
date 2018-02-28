@@ -374,13 +374,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
     <div class = "modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
     </div>
       <div class="modal-body">
         <form action="${pageContext.request.contextPath}/saveUser" method="POST">           
             <div class="header header-primary text-center">
-                <h3 style="color: #303030 !important;"> Create New Task </h3>
+                <h3 style="color: #303030 !important; margin-top: -20px;"> Create New Task </h3>
             </div>
             <p class="text-divider"></p>
             <div class="content">
