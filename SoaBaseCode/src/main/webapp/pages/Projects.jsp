@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="main-panel">
-            <nav class="navbar navbar-transparent navbar-absolute">
+            <nav class="navbar navbar-transparent navbar-absolute" style="background-color: #FFFFFF; margin-left: 10px;">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse">
@@ -49,7 +49,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Sample Project 1 </a>
+                        <a class="navbar-brand" href="#" style="font-size: 30px; font-weight: bold; padding-left: 30px; padding-top: 15px;"> Project One </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
