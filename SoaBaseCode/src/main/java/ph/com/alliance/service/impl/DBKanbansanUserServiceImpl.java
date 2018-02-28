@@ -82,10 +82,10 @@ public class DBKanbansanUserServiceImpl implements DBKanbansanUserService {
 	}
 
 	@Override
-	public User selectUser(User pUser) {
+	public User selectUser(String pUser) {
 		// TODO Auto-generated method stub
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		return userDao.selectUser(em, pUser.getUser_id());
+		return userDao.selectUser(em, pUser);
 	}
 
 	@Override
