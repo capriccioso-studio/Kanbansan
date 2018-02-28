@@ -23,6 +23,37 @@
 
 /* Shadows (from mdl http://www.getmdl.io/) */
 
+.fab{
+    position:fixed;
+  background-color:#F44336;
+  width:12vmin;
+  height:12vmin;
+  border-radius:100%;
+  background:#9c27b0;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:36px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+
+  top:83vh;
+  left:90vw;
+  z-index: 1000;
+}
+.fab:focus {
+  transform:scale(15);
+  transform:rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.fab:hover {
+  transform:scale(1.05);
+
+}
+
 .noUi-target,
 .noUi-target * {
     -webkit-touch-callout: none;

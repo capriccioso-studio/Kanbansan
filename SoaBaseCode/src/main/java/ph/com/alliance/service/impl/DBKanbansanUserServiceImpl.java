@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.stereotype.Service;
 
-import ph.com.alliance.dao.TaskDao;
 import ph.com.alliance.dao.UserDao;
-import ph.com.alliance.entity.Task;
 import ph.com.alliance.entity.User;
 import ph.com.alliance.service.DBKanbansanUserService;
 
