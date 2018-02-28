@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </div>
-        <div class="main-panel">
+        <div class="main-panel" style="background-color: #1093a7; color:#FFFFFF">
             <nav class="navbar navbar-transparent navbar-absolute" style="background-color: #FFFFFF; margin-left: 10px;">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -119,16 +119,16 @@
                         <div class="col-lg-3 col-md-6 col-sm-6">
 
                             <button type ="button" class="btn btn-white card" data-toggle = "modal" data-target = "#exampleModal">
-                                <div class="card-content">
-                                    <p class="category">Priority 1</p>
+                                <div class="card-content" style = "text-align: left; margin-left: -28px; text-transform: none;">
+                                    <p class="category"">Priority 1</p>
                                     <h5 class="title">
-                                        Screw module 2x
+                                        Renew Database Connection
                                     </h5>
                                 </div>
-                                <div class="card-footer">
+                                <div class="card-footer" style = "text-align: left; margin-left: -10px; text-transform: none;">
                                     <div class="stats">
-                                        <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: Trina</a>
+                                        <i class="material-icons" style="margin-top: -12px;">person</i>
+                                        <a href="#pablo">Assigned to: Yukatrina</a>
                                     </div>
                                 </div>
                             </button>
