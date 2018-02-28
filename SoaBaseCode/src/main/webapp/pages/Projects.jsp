@@ -17,32 +17,23 @@
 </head>
 <body>
 <div class="wrapper">
-        <div class="sidebar" data-color="purple" >
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
+        <div class="sidebar" data-color= "blue" style="background-color: #24454c !important; color: #FFFFFF;">
             <div class="logo" >
-                <a href="/SoaBaseCode/" class="simple-text">
-                   Kanbansan
-                </a>
+                <img src="/SoaBaseCode/img/kanbansan-logo-white.png" style="width: 240px;" href="/SoaBaseCode/">   
             </div>
-            <div style="padding-left: 20px; padding-top: 20px; font-weight: bold;">
+            <div style="padding-left: 28px; padding-top: 20px; font-weight: bold; font-size: 18px;">
                 My Projects
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active">
                         <a href="dashboard.html">
-                            <i class="material-icons">dashboard</i>
-                            <p>Sample Project 1</p>
+                            <p style="color: #FFFFFF !important;"> Project One</p>
                         </a>
                     </li>
                     <li>
                         <a href="./user.html">
-                            <i class="material-icons">person</i>
-                            <p>Sample Project 2</p>
+                            <p style="color: #FFFFFF !important;"> Project Two</p>
                         </a>
                     </li>
                 </ul>
