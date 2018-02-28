@@ -16,6 +16,7 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+
 <div class="wrapper">
         <div class="sidebar" data-color= "blue" style="background-color: #24454c !important; color: #FFFFFF;">
             <div class="logo" >
@@ -40,6 +41,14 @@
             </div>
         </div>
         <div class="main-panel" style="background-color: #1093a7; color:#FFFFFF">
+
+<!-- KANI KIIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+
+        	<button type = "button" class="fab" data-toggle="modal" data-target="#emptyTask" title = "Create SMP">
+            +</button>
+
+<!-- KANI KIIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+
             <nav class="navbar navbar-transparent navbar-absolute" style="background-color: #FFFFFF; margin-left: 10px;">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -99,7 +108,7 @@
             </nav>
             <div class="content">
                 <div class="container-fluid">
-
+<!--row 1 -->
                     <div class = "row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <h4 class = "text-center">Selected for Development</h4>
@@ -114,6 +123,7 @@
                             <h4 class = "text-center">Done</h4>
                         </div>
                     </div>
+
 <!-- Priority 1 -->
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
@@ -341,7 +351,66 @@
     </div>
   </div>
 </div>
-<!-- Modal -->
+<!-- Task MODal -->
+<div class="modal fade" id="emptyTask" tabindex="-1" role="dialog" aria-labelledby="emptyTask" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form action="${pageContext.request.contextPath}/saveUser" method="POST">
+				
+						<div class="header header-primary text-center">
+	                        <h3>Test Add Task</h3>
+	                    </div>
+	                    <p class="text-divider"></p>
+	                    <div class="content">
+	                    	<div class = "row">
+	                    		<div class = "col-md-6">
+	                    			<div class="col-md-10 col-md-offset-1"">
+	                    				<input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Task Name"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	                    			</div>
+	                    			
+								</div>
+	                    	</div>
+	                    	<div class="row">
+	                    		<div class = "col-md-6">
+	                    			<div class="col-md-10 col-md-offset-1">
+	                    				<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	                    			</div>
+									
+								</div>
+	                    	</div>
+
+							<div class="row">
+	                    		<div class = "col-md-6">
+	                    			<div class="col-md-10 col-md-offset-1">
+	                    				<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Assigned"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	                    			</div>
+									
+								</div>
+	                    	</div>
+							<div class="row" style="text-align: center;">
+								<div style="text-align: center;">
+									<div style="padding-top: 40px !important; text-align: center;">
+										<input type="submit" class = "btn btn-primary" value="Sign up" style="background-color: #589ba4 !important;"> 
+									</div>						
+									
+								</div>
+							</div>
+
+
+
+							<div class="row" style="text-align: center; padding-top: 10px; padding-bottom: 10px !important;">
+								<a href="/SoaBaseCode" style="color: #589ba4;">Already have an account? Log in.</a>
+							</div>
+							
+							
+	                    </div>
+			</form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- itger -->
 </body>
 	<script src="../lib/js/jquery-1.10.1.min.js"></script>
 	<script src="../lib/js/bootstrap.min.js"></script>

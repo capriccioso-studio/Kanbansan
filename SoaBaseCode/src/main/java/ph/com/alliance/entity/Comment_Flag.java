@@ -17,7 +17,7 @@ import javax.persistence.Id;
 @Table(name= "comment_flag")
 public class Comment_Flag implements Serializable{
 	
-	private static final long serialVersionUiD = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@Column(nullable=false)

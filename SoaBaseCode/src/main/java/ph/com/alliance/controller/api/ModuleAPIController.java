@@ -49,10 +49,10 @@ public class ModuleAPIController {
     	u.setEmail(request.getParameter("email"));
     	u.setPassword(request.getParameter("password"));
     	
-    	System.out.println("FUCK");
+    	
     	if(!userService.createUser(u))
     		u = null;
-    	
+    	System.out.println("FUCK");
     	/*if(!dbSvc.createUser(this.convertToEntity(u))) {
     		u = null;
     	}*/
