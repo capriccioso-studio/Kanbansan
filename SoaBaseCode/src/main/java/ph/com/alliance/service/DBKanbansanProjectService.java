@@ -12,6 +12,6 @@ public interface DBKanbansanProjectService {
 	
 	public void deleteProject(Project pProject);
 	
-	public Project selectProject(Project pProject);
+	public Project selectProject(String pProject);
 	
 }

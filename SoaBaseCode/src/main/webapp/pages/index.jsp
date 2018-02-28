@@ -25,10 +25,13 @@
 		<div class="row">
 			<img src="/SoaBaseCode/img/kanbansan-logo-black.png" style="width: 400px;">
 		</div>
+	  <form action = "${pageContext.request.contextPath}/login" method = "POST">
+	  
+	  
 		<div class = "row" style="padding-top: 20px;">
 	        <div class = "col-md-6">
 	            <div class="col-md-5 col-sm-4">
-	                <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Username" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	                <input id="user_id" type ="text" class ="form-control" name = "userName" placeholder = "Username" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	            </div>
 	                    			
 			</div>
@@ -44,17 +47,17 @@
 	    <div class = "row">
 	    	<div class = "col-md-6">
 	    		<div class="col-md-5" style="padding-top: 20px;">
-	    			<a href ="" class = "btn btn-primary" style="background-color: #589ba4 !important;">Log in</a>
-	    		</div>
+	    			<input type = "submit" class = "btn btn-primary" value = "Log In" style="background-color: #589ba4 !important;">
 	    	</div>
-	    	
+	    	</div>
+
 	    </div>
+	   </form>
 	    <div class="row">
 	    	<div class="col-md-6">
 	    		<div class="col-md-5" style="padding-top: 20px;">
 	    			<a href ="/SoaBaseCode/Register" style="color: #589ba4;">Don't have an account? Sign up.</a>
 	    		</div>
-	    		
 	    	</div>
 	    </div>
 	</div>

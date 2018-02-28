@@ -79,9 +79,9 @@ public class DBKanbansanTaskServiceImpl implements DBKanbansanTaskService {
 	}
 	
 	@Override
-	public Task selectTask(Task pTask)
+	public Task selectTask(String pTask)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		return taskDao.selectTask(em, pTask.getTask_id());
+		return taskDao.selectTask(em, pTask);
 	}
 }

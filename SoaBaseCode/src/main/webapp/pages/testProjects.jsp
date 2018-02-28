@@ -23,7 +23,7 @@
                 <img src="/SoaBaseCode/img/kanbansan-logo-white.png" style="width: 240px;" href="/SoaBaseCode/">   
             </div>
             <div style="padding-left: 28px; padding-top: 20px; font-weight: bold; font-size: 18px;">
-                My Projects
+                ${user.user_id} 's projects
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -356,17 +356,17 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <form action="${pageContext.request.contextPath}/saveUser" method="POST">
+        <form action="${pageContext.request.contextPath}/saveTask" method="POST">
 				
 						<div class="header header-primary text-center">
-	                        <h3>Test Add Task</h3>
+	                        <h3 class = "text-muted">Test Add Task</h3>
 	                    </div>
 	                    <p class="text-divider"></p>
 	                    <div class="content">
 	                    	<div class = "row">
 	                    		<div class = "col-md-6">
 	                    			<div class="col-md-10 col-md-offset-1"">
-	                    				<input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Task Name"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	                    				<input id="user_id" type ="text" class ="form-control" name = "taskName" placeholder = "Task Name"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	                    			</div>
 	                    			
 								</div>
@@ -374,7 +374,7 @@
 	                    	<div class="row">
 	                    		<div class = "col-md-6">
 	                    			<div class="col-md-10 col-md-offset-1">
-	                    				<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	                    				<input id="firstName" type ="text" class ="form-control" name = "taskDescription" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	                    			</div>
 									
 								</div>
@@ -383,11 +383,12 @@
 							<div class="row">
 	                    		<div class = "col-md-6">
 	                    			<div class="col-md-10 col-md-offset-1">
-	                    				<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Assigned"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	                    				<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "assigned"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	                    			</div>
-									
 								</div>
 	                    	</div>
+	                    	<input type = "text" name = "redirect" value = "${user.user_id}">
+	                    	<input type = "text" name = "projectID" value = "1">
 							<div class="row" style="text-align: center;">
 								<div style="text-align: center;">
 									<div style="padding-top: 40px !important; text-align: center;">

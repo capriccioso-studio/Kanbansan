@@ -10,6 +10,6 @@ public interface DBKanbansanTaskService {
 	
 	public void deleteTask(Task pTask);
 	
-	public Task selectTask(Task pTask);
+	public Task selectTask(String pTask);
 
 }
