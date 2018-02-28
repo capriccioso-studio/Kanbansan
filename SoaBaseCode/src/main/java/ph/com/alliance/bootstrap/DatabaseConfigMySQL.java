@@ -27,7 +27,7 @@ public class DatabaseConfigMySQL{
    @Bean
    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
       LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
-      em.setDataSource(dataSource());
+      em.setDataSource(dataSource());   
       em.setPackagesToScan(new String[] {"ph.com.alliance.entity"}); 
       JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
       em.setJpaVendorAdapter(vendorAdapter);

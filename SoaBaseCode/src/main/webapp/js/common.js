@@ -19,7 +19,7 @@ function bindUserFormEvents() {
 					 success: function() {
 						 $.ajax({
 								url: ROOT_URL,
-								type: "GET"})
+								type: "POST"})
 						 }
 				
 		});
