@@ -118,17 +118,17 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
 
-                            <button type ="button" class="btn btn-white card" data-toggle = "modal" data-target = "#exampleModal">
+                            <button type ="button" class="btn btn-white card" data-toggle = "modal" data-target = "#exampleModal" style = "height: 130px;">
                                 <div class="card-content" style = "text-align: left; margin-left: -28px; text-transform: none;">
-                                    <p class="category"">Priority 1</p>
-                                    <h5 class="title">
-                                        Renew Database Connection
+                                    <p class="category" style="font-size: 15px !important; margin-top: -10px; font-family: Helvetica, Arial, sans-serif !important;">Priority 1</p>
+                                    <h5 class="title" style = "color: #000000; font-size: 18px !important;">
+                                       Check this Module
                                     </h5>
                                 </div>
-                                <div class="card-footer" style = "text-align: left; margin-left: -10px; text-transform: none;">
+                                <div class="card-footer" style = "text-align: left; margin-left: -10px; text-transform: none;  margin-top: -10px;">
                                     <div class="stats">
                                         <i class="material-icons" style="margin-top: -12px;">person</i>
-                                        <a href="#pablo">Assigned to: Yukatrina</a>
+                                        <a href="#pablo" style="color: #1093a7;">Assigned to: Yukatrina</a>
                                     </div>
                                 </div>
                             </button>
@@ -195,7 +195,7 @@
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: Trina</a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Xander Ford</a>
                                     </div>
                                 </div>
                             </div>
