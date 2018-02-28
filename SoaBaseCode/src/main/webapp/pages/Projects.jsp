@@ -395,17 +395,32 @@
                         
                     </div>
                 </div>
-
                 <div class="row">
                     <div class = "col-md-6">
                         <div class="col-md-10 col-md-offset-1">
-                            <input id="firstName" style = "width: 450px; margin-left: 15px;"  type ="text" class ="form-control" name = "firstName" placeholder = "Assigned"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+                            <input id="firstName" style = "width: 450px; margin-left: 15px;"  type ="text" class ="form-control" name = "firstName" placeholder = "Assignee"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
                         </div>               
                     </div>
                 </div>
-                <div class="row" style="text-align: center;">
-                    <div style="text-align: center;">
-                        <div style="padding-top: 40px !important; text-align: center;">
+                <div class="row"> 
+                    <div class = "col-md-6" style="padding-top: 10px; padding-left: 30px; color: #303030;"> 
+                        <p style="margin-left: 35px;"> Due Date </p>
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="duedate" type="date" name="Due Date" style="color:#000000; margin-top: -10px;">
+                        </div>               
+                    </div>
+                    <div class = "cold col-md-6" style="padding-top: 10px; padding-left: 10px; color: #303030;">
+                        <p style="margin-left: -20px;"> Priority </p>
+                        <select style="margin-left: -20px; height: 33px !important; margin-top: -13px;">
+                            <option value="low"> Low </option>
+                            <option value="medium"> Medium </option>
+                            <option value="high"> High </option>
+                        </select>        
+                    </div>
+                </div>
+                <div class="row" style="text-align: right; padding-right:30px; ">
+                    <div>
+                        <div style="padding-top: 40px !important;">
                             <input type="submit" class = "btn btn-primary" value="Create Task" style="background-color: #589ba4 !important;"> 
                         </div>                      
                         
