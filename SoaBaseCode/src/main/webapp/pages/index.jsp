@@ -19,6 +19,8 @@
 
 <body>
 	<div id="main-container" class="container">
+	HOMEPAGE
+	<a href ="/SoaBaseCode/Register" class = "btn btn-primary">Register</a>
 	</div>
 </body>
 	<script src="lib/js/jquery-1.10.1.min.js"></script>

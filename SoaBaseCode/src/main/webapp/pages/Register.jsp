@@ -17,16 +17,60 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+ <div class="wrapper">
+ <div class="header header-filter" >
 	<div class="container">
-		SHIT
-	
+		<div class ="row">
+			<form class="form">
+				<div class="col-md-6 col-md-offset-3 col-sm-4 col-sm-offset-2">
+					<div class ="card card-signup">
+						<div class="header header-primary text-center">
+	                        <h4>Sign Up</h4>
+	                    </div>
+	                    <p class="text-divider"></p>
+	                    <div class="content">
+	                    	<div class = "col-md-6">
+	                    		<div class="input-group">
+	                    			<input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Username" required autofocus>
+								</div>
+							</div>
+							<div class = "col-md-6">
+								<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "First Name" required autofocus>
+							</div>
+							<div class = "col-md-6">
+								<input id="lastName" type ="text" class ="form-control" name = "lastName" placeholder = "Last Name" required autofocus>
+							</div>
+							<div class = "col-md-6">
+								<input id="email" type ="text" class ="form-control" name = "email" placeholder = "Email" required autofocus>
+							</div>
+							<div class = "col-md-6">
+								<input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus>
+							</div>							
+							<button id = "save-btn" class = "btn btn-primary">Register</button>
+							
+	                    </div>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
+ </div>
+ </div>
 </body>
 	<script src="lib/js/jquery-1.10.1.min.js"></script>
 	<script src="lib/js/bootstrap.min.js"></script>
 	<script src="lib/js/material.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+	
+	<script src="lib/js/arrive.min.js"></script>
+	 
 	<script src="lib/js/perfect-scrollbar.jquery.min.js"></script>
 	<script src="lib/js/material-dashboard.js?v=1.2.0"></script>
 	<script src="js/common.js"></script>
 	<script src="lib/js/jquery.blockUI.js"></script>
+	 <script>
+	$(document).ready(function() {
+		bindUserFormEvents();
+	});
+</script>
 </html>

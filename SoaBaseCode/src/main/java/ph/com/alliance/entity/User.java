@@ -19,8 +19,7 @@ public class User implements Serializable {
     
     @Id
     @Column(nullable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int user_id;
+    private String user_id;
     
     private String firstName;
     private String lastName;
@@ -40,10 +39,10 @@ public class User implements Serializable {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public int getUser_id() {
+    public String getUser_id() {
         return user_id;
     }
-    public void setUser_id(int user_id) {
+    public void setUser_id(String user_id) {
         this.user_id = user_id;
     }
     

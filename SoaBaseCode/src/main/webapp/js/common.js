@@ -4,17 +4,28 @@ $(document).ready(function() {
 	loadUserForm();
 });
 
-function loadUserForm() {
-	$.ajax({
-		url: ROOT_URL + 'modulename/userform',
-		type: "get",
-		dataType: "text"
-	}).done(function(data) {
-		$('#main-container').html(data);
-	});
-}
 
 function bindUserFormEvents() {
+	
+	$('#save-btn').click(function(){
+		$.ajax({
+			url: ROOT_URL + 'api/saveUser',
+			type: "post",
+			data: {user_id: $("#user_id").val()
+					, firstName: $("#firstName").val()
+					, lastName: $('#lastName').val()
+					, email: $('#email').val()
+					, password: $('#password').val()},
+			//success:function(data)
+					
+		}).done(function(){
+			$.ajax({
+				url: ROOT_URL
+			});
+		});
+	});
+	
+	
 	
 	$('#lnk_home').click(function(){
 		$('#lnk_home').addClass("active");
@@ -36,53 +47,8 @@ function bindUserFormEvents() {
 		});
 	});
 	
-	$('#lnk_messages').click(function(){
-		$('#lnk_home').removeClass("active");
-		$('#lnk_profile').removeClass("active");
-		$('#lnk_messages').addClass("active");
-		
-		$.ajax({
-			url: ROOT_URL + 'modulename/Register',
-			type: "get",
-			dataType: "text"
-		}).done(function(data) {
-			$('#tab-content').html(data);
-
-		});
-	});
 	
-	$('#save-btn').click(function(){
 
-		if($("#fname").val() === '' || $("#lname").val() === '' || $('#uid').val() === '') {
-			$('#alert-area').removeClass('alert-success');
-			$('#alert-area').addClass('alert-danger');
-			$('#alert-area').html("Missing required fields.");
-		} else {
-			var gender = 'female';
-			
-			if($('#btn-male').hasClass('active')){ gender = 'male';}
-			
-			$.ajax({
-				url: ROOT_URL + 'api/saveUser',
-				type: "post",
-				data: {fname: $("#fname").val()
-						, lname: $("#lname").val()
-						, uid: $('#uid').val()
-						, gender: gender
-						, age: $('#age').val()}
-			}).done(function(data) {
-				if(data.fname) {
-					$('#alert-area').removeClass('alert-danger');
-					$('#alert-area').addClass('alert-success');
-					$('#alert-area').html("Successfully saved " + data.fname);
-				} else {
-					$('#alert-area').removeClass('alert-success');
-					$('#alert-area').addClass('alert-danger');
-					$('#alert-area').html("There is already an existing user.");	
-				}
-			});
-		}
-	});
 	
 	$('#search-btn').click(function(){
 		if($("#uid").val().trim() != '') {

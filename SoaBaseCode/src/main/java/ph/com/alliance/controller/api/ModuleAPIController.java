@@ -2,6 +2,7 @@ package ph.com.alliance.controller.api;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import ph.com.alliance.entity.User;
 import ph.com.alliance.model.UserModel;
-import ph.com.alliance.service.DBTransactionTestService;
+import ph.com.alliance.service.DBKanbansanUserService;
 
 /**
  * Controller class used to hadle api requests.
@@ -25,9 +26,8 @@ import ph.com.alliance.service.DBTransactionTestService;
  */
 @Controller
 public class ModuleAPIController {
-	
 	@Autowired
-	DBTransactionTestService dbSvc;
+	DBKanbansanUserService	userService;
 	
 	@Autowired
 	DozerBeanMapper dozerBeanMapper;
@@ -41,30 +41,30 @@ public class ModuleAPIController {
 	 */
     @RequestMapping(value = "/saveUser", method = RequestMethod.POST)
     @ResponseBody
-    public UserModel saveUser(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
-    	UserModel u = new UserModel();
-    	int age = (request.getParameter("age") == "" ? 0: Integer.parseInt(request.getParameter("age")));
+    public String saveUser(HttpServletRequest request, HttpServletResponse response, ModelMap map) throws Exception{
+    	User u = new User();
     	
-    	u.setFname(request.getParameter("fname"));
-    	u.setLname(request.getParameter("lname"));
-    	u.setAge(age);
-    	u.setUid(request.getParameter("uid"));
-    	u.setGender(request.getParameter("gender"));
+    	u.setUser_id(request.getParameter("user_id"));
+    	u.setFirstName(request.getParameter("firstName"));
+    	u.setLastName(request.getParameter("lastName"));
+    	u.setEmail(request.getParameter("email"));
+    	u.setPassword(request.getParameter("password"));
+    	
+    	System.out.println("FUCK");
+    	if(!userService.createUser(u))
+    		u = null;
     	
     	/*if(!dbSvc.createUser(this.convertToEntity(u))) {
     		u = null;
     	}*/
-    	
-    	System.out.println("MAPPED USER --- " + this.convertToEntity(u));
-    	    	
-    	return u;
+    	return "redirect:/";
     }
     
     /**
      * 
      * @param uid
      * @return
-     */
+     
     @RequestMapping(value = "/searchUser/{uid}", method = RequestMethod.GET)
     @ResponseBody
     public UserModel searchUser(@PathVariable("uid") int uid) {
@@ -78,7 +78,7 @@ public class ModuleAPIController {
     /**
      * 
      * @return
-     */
+     
     @RequestMapping(value = "/searchAllUsers", method = RequestMethod.GET)
     @ResponseBody
     public List<UserModel> searchAllUsers() {

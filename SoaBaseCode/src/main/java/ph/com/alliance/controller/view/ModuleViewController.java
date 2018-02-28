@@ -37,22 +37,6 @@ public class ModuleViewController {
      * @param map
      * @return
      */
-    @RequestMapping(value = "/Register", method = RequestMethod.GET)
-    public String viewMessages(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
-    	System.out.println("@/modulename/messages MODULE VIEW CONTROLLER CALLED.");
-        return "/Register";
-    }
-    
-    /**
-     * 
-     * @param request
-     * @param response
-     * @param map
-     * @return
-     */
-    @RequestMapping(value = "/userform", method = RequestMethod.GET)
-    public String viewUserForm(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
-    	System.out.println("@/modulename/userform MODULE VIEW CONTROLLER CALLED.");
-        return "userform";
-    }
+
+
 }
