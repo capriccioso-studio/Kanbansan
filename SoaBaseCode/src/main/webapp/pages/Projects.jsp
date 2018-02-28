@@ -87,7 +87,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#"> has been added to the team</a>
+                                        <a href="#" :hover{background-color: #1093a7 !important;}> has been added to the team</a>
                                     </li>
                                     <li>
                                         <a href="#"> has been added to the team</a>
