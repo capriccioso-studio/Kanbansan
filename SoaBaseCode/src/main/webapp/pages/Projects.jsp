@@ -102,7 +102,7 @@
 
                     <div class = "row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center">Selected for Development</h4>
+                            <h4 class = "text-center" style="font-weight: bold;">To-do's</h4>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <h4 class = "text-center">In Progress</h4>
