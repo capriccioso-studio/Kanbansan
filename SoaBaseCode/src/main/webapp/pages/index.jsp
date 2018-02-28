@@ -27,7 +27,7 @@
 		</div>
 		<div class = "row" style="padding-top: 20px;">
 	        <div class = "col-md-6">
-	            <div class="col-md-5"">
+	            <div class="col-md-5 col-sm-4">
 	                <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Username" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	            </div>
 	                    			
@@ -35,7 +35,7 @@
 	    </div>
 	    <div class = "row">
 	        <div class = "col-md-6">
-	            <div class="col-md-5"">
+	            <div class="col-md-5 col-sm-4">
 	                <input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	            </div>
 	                    			
