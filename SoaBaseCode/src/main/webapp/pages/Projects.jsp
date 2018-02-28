@@ -37,6 +37,9 @@
                         </a>
                     </li>
                 </ul>
+                <div style="padding-left: 28px; padding-top: 50px; font-size: 18px; color: #90b2b9;">
+                    Members (5)
+                </div>
             </div>
         </div>
         <div class="main-panel" style="background-color: #1093a7; color:#FFFFFF">
@@ -102,16 +105,16 @@
 
                     <div class = "row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center" style="font-weight: bold;">To-do's</h4>
+                            <h4 class = "text-center" style="font-weight: bold; padding-left: -10px;">To-do's</h4>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center">In Progress</h4>
+                            <h4 class = "text-center" style="font-weight: bold;">In Progress</h4>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center">Validation</h4>
+                            <h4 class = "text-center" style="font-weight: bold;">To Validate</h4>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center">Done</h4>
+                            <h4 class = "text-center" style="font-weight: bold;">Done</h4>
                         </div>
                     </div>
 <!-- Priority 1 -->
