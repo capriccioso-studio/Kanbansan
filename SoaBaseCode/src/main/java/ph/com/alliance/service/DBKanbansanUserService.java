@@ -12,7 +12,7 @@ public interface DBKanbansanUserService {
 	
 	public void deleteUser(User pUser);
 	
-	public User selectUser(User pUser);
+	public User selectUser(String string);
 	
 	public List<User> selectUsers(User pUser);
 	

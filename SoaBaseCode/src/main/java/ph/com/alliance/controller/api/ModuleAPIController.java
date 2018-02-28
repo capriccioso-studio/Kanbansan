@@ -40,8 +40,7 @@ public class ModuleAPIController {
 	 * @return
 	 */
     @RequestMapping(value = "/saveUser", method = RequestMethod.POST)
-    @ResponseBody
-    public String saveUser(HttpServletRequest request, HttpServletResponse response, ModelMap map) throws Exception{
+    public String saveUser(HttpServletRequest request, HttpServletResponse response, ModelMap map){
     	User u = new User();
     	
     	u.setUser_id(request.getParameter("user_id"));
@@ -57,7 +56,7 @@ public class ModuleAPIController {
     	/*if(!dbSvc.createUser(this.convertToEntity(u))) {
     		u = null;
     	}*/
-    	return "/SoaBaseCode/";
+    	return "redirect:user/projects?id="+u.getUser_id();
     }
     
     /**
