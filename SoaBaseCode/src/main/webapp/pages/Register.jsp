@@ -23,8 +23,8 @@
 		<div class ="row">
 			<form class="form">
 				<div class="col-md-6 col-md-offset-3 col-sm-4 col-sm-offset-2">
-					<div class = "row">
-						<img src="/img/kanbansan-logo-white.png">
+					<div class = "row" style="padding-top: 30px; text-align: center;">
+						<img src="/SoaBaseCode/img/kanbansan-logo-white.png" style="width: 250px;">
 					</div>
 					<div class ="card card-signup">
 						<div class="header header-primary text-center">
@@ -34,8 +34,8 @@
 	                    <div class="content">
 	                    	<div class = "row">
 	                    		<div class = "col-md-6">
-	                    			<div class="col-md-10 col-md-offset-1">
-	                    				<input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Username" required autofocus>
+	                    			<div class="col-md-10 col-md-offset-1"">
+	                    				<input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Username" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	                    			</div>
 	                    			
 								</div>
@@ -43,13 +43,13 @@
 	                    	<div class="row">
 	                    		<div class = "col-md-6">
 	                    			<div class="col-md-10 col-md-offset-1">
-	                    				<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "First Name" required autofocus>
+	                    				<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "First Name" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	                    			</div>
 									
 								</div>
 								<div class = "col-md-6">
 									<div class="col-md-10">
-										<input id="lastName" type ="text" class ="form-control" name = "lastName" placeholder = "Last Name" required autofocus>
+										<input id="lastName" type ="text" class ="form-control" name = "lastName" placeholder = "Last Name" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 									</div>
 									
 								</div>
@@ -57,13 +57,13 @@
 	                    	<div class="row">
 	                    		<div class = "col-md-6">
 	                    			<div class="col-md-10 col-md-offset-1">
-	                    				<input id="email" type ="text" class ="form-control" name = "email" placeholder = "Email" required autofocus>
+	                    				<input id="email" type ="text" class ="form-control" name = "email" placeholder = "Email" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	                    			</div>
 									
 								</div>
 								<div class = "col-md-6">
 									<div class="col-md-10">
-										<input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus>
+										<input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 									</div>
 									
 								</div>
@@ -71,14 +71,18 @@
 	                    	<div class="row">
 
 	                    	</div>
-							<div class="row">
-								<div class= "col-md-6">
-									<div class="col-md-6 col-md-offset-9 col-sm-4 col-sm-offset-2" style="padding-top: 60px !important;">
+							<div class="row" style="text-align: center;">
+								<div style="text-align: center;">
+									<div style="padding-top: 40px !important; text-align: center;">
 										<button id = "save-btn" class = "btn btn-primary" style="background-color: #589ba4 !important;">Register</button>
 									</div>						
 									
 								</div>
 							</div>
+							<div class="row" style="text-align: center; padding-top: 10px; padding-bottom: 10px !important;">
+								<a href="" style="color: #589ba4;">Already have an account? Log in.</a>
+							</div>
+							
 							
 	                    </div>
 					</div>
