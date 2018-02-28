@@ -16,12 +16,12 @@ function bindUserFormEvents() {
 					, lastName: $('#lastName').val()
 					, email: $('#email').val()
 					, password: $('#password').val()},
-			//success:function(data)
-					
-		}).done(function(){
-			$.ajax({
-				url: ROOT_URL
-			});
+					 success: function() {
+						 $.ajax({
+								url: ROOT_URL,
+								type: "GET"})
+						 }
+				
 		});
 	});
 	
@@ -41,10 +41,9 @@ function bindUserFormEvents() {
 		$.ajax({
 			url: ROOT_URL + 'modulename/profile',
 			type: "get",
-			dataType: "text"
-		}).done(function(data) {
-			$('#tab-content').html(data);
-		});
+			dataType: "text",
+
+		})
 	});
 	
 	

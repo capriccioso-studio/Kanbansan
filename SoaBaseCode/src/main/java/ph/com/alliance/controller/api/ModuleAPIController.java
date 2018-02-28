@@ -57,7 +57,7 @@ public class ModuleAPIController {
     	/*if(!dbSvc.createUser(this.convertToEntity(u))) {
     		u = null;
     	}*/
-    	return "redirect:/";
+    	return "/SoaBaseCode/";
     }
     
     /**
