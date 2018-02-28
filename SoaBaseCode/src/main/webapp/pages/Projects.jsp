@@ -370,7 +370,7 @@
 </div>
 <!-- Modal -->
 <!-- Add Project -->
-<div class="modal fade" id="emptyTask" tabindex="-1" role="dialog" aria-labelledby="emptyTask" aria-hidden="true">
+<div class="modal fade" id="emptyTask" tabindex="-1" role="dialog" aria-labelledby="emptyTask" aria-hidden="true" style="height: 750px;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -383,14 +383,14 @@
                 <div class = "row">
                     <div class = "col-md-6">
                         <div class="col-md-10 col-md-offset-1"">
-                            <input id="user_id" style = "width: 450px; margin-left: 15px;"  type ="text" class ="form-control" name = "user_id" placeholder = "Task Name"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+                            <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Task Name" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
                         </div>                                    
                     </div>
                 </div>
                 <div class="row">
                     <div class = "col-md-6">
                         <div class="col-md-10 col-md-offset-1">
-                            <input id="firstName" style = "width: 450px; margin-left: 15px;"  type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+                            <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
                         </div>
                         
                     </div>
@@ -398,7 +398,7 @@
                 <div class="row">
                     <div class = "col-md-6">
                         <div class="col-md-10 col-md-offset-1">
-                            <input id="firstName" style = "width: 450px; margin-left: 15px;"  type ="text" class ="form-control" name = "firstName" placeholder = "Assignee"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+                            <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Assignee"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px; ">
                         </div>               
                     </div>
                 </div>
@@ -406,19 +406,19 @@
                     <div class = "col-md-6" style="padding-top: 10px; padding-left: 30px; color: #303030;"> 
                         <p style="margin-left: 35px;"> Due Date </p>
                         <div class="col-md-10 col-md-offset-1">
-                            <input id="duedate" type="date" name="Due Date" style="color:#000000; margin-top: -10px;">
+                            <input id="duedate" type="date" name="Due Date" style="margin-top: -10px; border-style: solid; border-color: #858585; border-width: 1px; text-indent: 3px; border-radius: 5px;">
                         </div>               
                     </div>
                     <div class = "cold col-md-6" style="padding-top: 10px; padding-left: 10px; color: #303030;">
                         <p style="margin-left: -20px;"> Priority </p>
-                        <select style="margin-left: -20px; height: 33px !important; margin-top: -13px;">
-                            <option value="low"> Low </option>
+                        <select style="margin-left: -20px; height: 33px !important; margin-top: -13px; border-style: solid; border-color: #858585; border-width: 1px; text-indent: 3px; border-radius: 5px;"">
+                            <option value="low" style="text-indent: 3px;"> Low </option>
                             <option value="medium"> Medium </option>
                             <option value="high"> High </option>
                         </select>        
                     </div>
                 </div>
-                <div class="row" style="text-align: right; padding-right:30px; ">
+                <div class="row" style="text-align: right; padding-right:60px; ">
                     <div>
                         <div style="padding-top: 40px !important;">
                             <input type="submit" class = "btn btn-primary" value="Create Task" style="background-color: #589ba4 !important;"> 
