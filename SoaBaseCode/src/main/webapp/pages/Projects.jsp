@@ -112,7 +112,7 @@
                         </ul>
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group  is-empty">
-                                <input type="text" class="form-control" placeholdelr="Search" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; ::-webkit-input-placeholder{color: #FFFFFF;}">
+                                <input type="text" class="form-control" placeholdelr="Search" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; input::-webkit-input-placeholder{color: #FFFFFF;}">
                                 <span class="material-input"></span>
                             </div>
                             <button type="submit" class="btn btn-white btn-round btn-just-icon">
