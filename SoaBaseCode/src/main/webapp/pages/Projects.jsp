@@ -105,13 +105,46 @@
             </nav>
             <div class="content">
                 <div class="container-fluid">
+
+                    <div class = "row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4 class = "text-center">Selected for Development</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4 class = "text-center">In Progress</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4 class = "text-center">Validation</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4 class = "text-center">Done</h4>
+                        </div>
+                    </div>
+<!-- Priority 1 -->
                     <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+
+                            <button type ="button" class="btn btn-white card" data-toggle = "modal" data-target = "#exampleModal">
+                                <div class="card-content">
+                                    <p class="category">Priority 1</p>
+                                    <h5 class="title">
+                                        Screw module 2x
+                                    </h5>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: Trina</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card">
                                 <div class="card-content">
                                     <p class="category">Priority 1</p>
                                     <h5 class="title">
-                                        Deploy Module 2
+                                        Imo mama i develop
                                     </h5>
                                 </div>
                                 <div class="card-footer">
@@ -127,7 +160,23 @@
                                 <div class="card-content">
                                     <p class="category">Priority 1</p>
                                     <h5 class="title">
-                                        Deploy Module 3
+                                        Validatingg
+                                    </h5>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="category">Priority 1</p>
+                                    <h5 class="title">
+                                        Done na siguro ni
                                     </h5>
                                 </div>
                                 <div class="card-footer">
@@ -139,13 +188,62 @@
                             </div>
                         </div>
                     </div>
+<!-- Priority 2 -->
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card">
                                 <div class="card-content">
-                                    <p class="category">Priority 1</p>
+                                    <p class="category">Priority 2</p>
                                     <h5 class="title">
-                                        Deploy Module 3
+                                        Screw module 2
+                                    </h5>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: Trina</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="category">Priority 2</p>
+                                    <h5 class="title">
+                                        Imo mama i develop
+                                    </h5>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="category">Priority 2</p>
+                                    <h5 class="title">
+                                        Validatingg
+                                    </h5>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="category">Priority 2</p>
+                                    <h5 class="title">
+                                        Done na siguro ni
                                     </h5>
                                 </div>
                                 <div class="card-footer">
@@ -157,272 +255,99 @@
                             </div>
                         </div>
                     </div>
+<!-- Priority 3 -->
                     <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="card card-nav-tabs">
-                                <div class="card-header" data-background-color="purple">
-                                    <div class="nav-tabs-navigation">
-                                        <div class="nav-tabs-wrapper">
-                                            <span class="nav-tabs-title">Tasks:</span>
-                                            <ul class="nav nav-tabs" data-tabs="tabs">
-                                                <li class="active">
-                                                    <a href="#profile" data-toggle="tab">
-                                                        <i class="material-icons">bug_report</i> Bugs
-                                                        <div class="ripple-container"></div>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#messages" data-toggle="tab">
-                                                        <i class="material-icons">code</i> Website
-                                                        <div class="ripple-container"></div>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#settings" data-toggle="tab">
-                                                        <i class="material-icons">cloud</i> Server
-                                                        <div class="ripple-container"></div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <div class="tab-content">
-                                        <div class="tab-pane active" id="profile">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes" checked>
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-                                                        </td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes" checked>
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="tab-pane" id="messages">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes" checked>
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-                                                        </td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="tab-pane" id="settings">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes" checked>
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-                                                        </td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card">
-                                <div class="card-header" data-background-color="orange">
-                                    <h4 class="title">Employees Stats</h4>
-                                    <p class="category">New employees on 15th September, 2016</p>
+                                <div class="card-content">
+                                    <p class="category">Priority 3</p>
+                                    <h5 class="title">
+                                        Screw module 2
+                                    </h5>
                                 </div>
-                                <div class="card-content table-responsive">
-                                    <table class="table table-hover">
-                                        <thead class="text-warning">
-                                            <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Salary</th>
-                                            <th>Country</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Dakota Rice</td>
-                                                <td>$36,738</td>
-                                                <td>Niger</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Minerva Hooper</td>
-                                                <td>$23,789</td>
-                                                <td>Curaçao</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Sage Rodriguez</td>
-                                                <td>$56,142</td>
-                                                <td>Netherlands</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Philip Chaney</td>
-                                                <td>$38,735</td>
-                                                <td>Korea, South</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: Trina</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="category">Priority 3</p>
+                                    <h5 class="title">
+                                        Imo mama i develop
+                                    </h5>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="category">Priority 3</p>
+                                    <h5 class="title">
+                                        Validatingg
+                                    </h5>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="category">Priority 3</p>
+                                    <h5 class="title">
+                                        Done na siguro ni
+                                    </h5>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons">person</i>
+                                        <a href="#pablo">Assigned to: </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
+
+<!--Modal Core  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
 </body>
 	<script src="../lib/js/jquery-1.10.1.min.js"></script>
 	<script src="../lib/js/bootstrap.min.js"></script>
