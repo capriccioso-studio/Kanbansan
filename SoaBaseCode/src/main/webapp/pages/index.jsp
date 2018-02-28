@@ -5,7 +5,7 @@
 
 <html>
 <head>
- <title>JAVA BASE CODE BETA 1.0</title>
+ <title>Kanban-san - Home</title>
 	<link rel="stylesheet" href="css/styles.css" />
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<meta name="viewport" content="width=device-width" />
@@ -17,10 +17,46 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <head>
 
-<body>
+<body style="background-image: url(/SoaBaseCode/img/splash-image.png);">
 	<div id="main-container" class="container">
-	HOMEPAGE
-	<a href ="/SoaBaseCode/Register" class = "btn btn-primary">Register</a>
+		<div class="row" style="padding-top: 10px; text-align: right;">
+			<a href ="/SoaBaseCode/Register" class = "btn btn-primary" style="background-color: #589ba4 !important;">Register</a>
+		</div>
+		<div class="row">
+			<img src="/SoaBaseCode/img/kanbansan-logo-black.png" style="width: 400px;">
+		</div>
+		<div class = "row" style="padding-top: 20px;">
+	        <div class = "col-md-6">
+	            <div class="col-md-5 col-sm-4">
+	                <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Username" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	            </div>
+	                    			
+			</div>
+	    </div>
+	    <div class = "row">
+	        <div class = "col-md-6">
+	            <div class="col-md-5 col-sm-4">
+	                <input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	            </div>
+	                    			
+			</div>
+	    </div>
+	    <div class = "row">
+	    	<div class = "col-md-6">
+	    		<div class="col-md-5" style="padding-top: 20px;">
+	    			<a href ="" class = "btn btn-primary" style="background-color: #589ba4 !important;">Log in</a>
+	    		</div>
+	    	</div>
+	    	
+	    </div>
+	    <div class="row">
+	    	<div class="col-md-6">
+	    		<div class="col-md-5" style="padding-top: 20px;">
+	    			<a href ="/SoaBaseCode/Register" style="color: #589ba4;">Don't have an account? Sign up.</a>
+	    		</div>
+	    		
+	    	</div>
+	    </div>
 	</div>
 </body>
 	<script src="lib/js/jquery-1.10.1.min.js"></script>
