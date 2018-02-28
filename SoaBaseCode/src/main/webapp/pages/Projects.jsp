@@ -16,7 +16,6 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-
 <div class="wrapper">
         <div class="sidebar" data-color= "blue" style="background-color: #24454c !important; color: #FFFFFF;">
             <div class="logo" >
@@ -62,12 +61,12 @@
                 </ul>
             </div>
         </div>
-        <div class="main-panel" style="background-color: #1093a7; color:#FFFFFF">
+        <div class="main-panel" style="background-color: #def2f3; color:#3b7880">
 
             <button type = "button" class="fab" data-toggle="modal" data-target="#emptyTask" title = "Create SMP" style="background-color: #1ad3f1;">
             +</button>
 
-            <nav class="navbar navbar-transparent navbar-absolute" style="background-color: #FFFFFF; margin-left: 10px;">
+            <nav class="navbar navbar-transparent navbar-absolute" style="background-color: #1093a7; margin-left: 10px; color: #FFFFFF";>
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse">
@@ -113,11 +112,11 @@
                         </ul>
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group  is-empty">
-                                <input type="text" class="form-control" placeholder="Search" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+                                <input type="text" class="form-control" placeholdelr="Search" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; ::-webkit-input-placeholder{color: #FFFFFF;}">
                                 <span class="material-input"></span>
                             </div>
                             <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                                <i class="material-icons">search</i>
+                                <i class="material-icons" style="font-size: 10px;"> GO </i>
                                 <div class="ripple-container"></div>
                             </button>
                         </form>
