@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>My Projects</title>
+<title> Kanbansan - Board</title>
 	<link rel="stylesheet" href="../css/styles.css" />
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<meta name="viewport" content="width=device-width" />
@@ -23,10 +23,13 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-            <div class="logo">
+            <div class="logo" >
                 <a href="/SoaBaseCode/" class="simple-text">
-                    My Projects
+                   Kanbansan
                 </a>
+            </div>
+            <div style="padding-left: 20px; padding-top: 20px; font-weight: bold;">
+                My Projects
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
