@@ -102,7 +102,7 @@
 
                     <div class = "row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center">Selected for Development</h4>
+                            <h4 class = "text-center" style="font-weight: bold;">To-do's</h4>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <h4 class = "text-center">In Progress</h4>
@@ -144,7 +144,7 @@
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: Jake Zyrus</a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Jake Zyrus</a>
                                     </div>
                                 </div>
                             </div>
@@ -221,13 +221,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 2</p>
                                     <h5 class="title">
-                                        Validatingg
+                                        Validate Data Entries
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Shell Lo</a>
                                     </div>
                                 </div>
                             </div>
@@ -237,13 +237,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 2</p>
                                     <h5 class="title">
-                                        Done na siguro ni
+                                        Registration
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Kim Sanwa </a>
                                     </div>
                                 </div>
                             </div>
@@ -256,13 +256,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 3</p>
                                     <h5 class="title">
-                                        Screw module 2
+                                        Recommendations
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: Trina</a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Trina</a>
                                     </div>
                                 </div>
                             </div>
@@ -272,13 +272,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 3</p>
                                     <h5 class="title">
-                                        Imo mama i develop
+                                        Remove Buttons
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Jake Zyrus</a>
                                     </div>
                                 </div>
                             </div>
@@ -288,13 +288,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 3</p>
                                     <h5 class="title">
-                                        Validatingg
+                                        Touch Spaghet
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Papa Bear</a>
                                     </div>
                                 </div>
                             </div>
@@ -304,13 +304,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 3</p>
                                     <h5 class="title">
-                                        Done na siguro ni
+                                        Done Task
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Done Yel </a>
                                     </div>
                                 </div>
                             </div>
