@@ -14,7 +14,31 @@ pageEncoding="ISO-8859-1"%>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+    .scrollbar {
+        overflow-y: overlay;
+    }
 
+    .scrollbar::-webkit-scrollbar-track {
+        background-color: #F5F5F5;
+        border-radius: 10px;
+    }
+
+    .scrollbar::-webkit-scrollbar {
+        width: 8px;
+        background-color: #F5F5F5;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-color: gray;
+        border-radius: 10px;
+    }
+
+    .dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li a:active {
+        background-color: #1093a7;
+        color: #FFFFFF;
+    }
+</style>
 </head>
 <body>
     <div class="wrapper">
@@ -325,13 +349,22 @@ pageEncoding="ISO-8859-1"%>
             <!--Modal Core  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
-                <div class="modal-content" style="width: 900px;">
-                  <div class="modal-header">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                    </div>
+                    <div class="modal-body" style="display: grid;
+                    grid-template-columns: 5fr 2fr;">
+                    <div class="scrollbar" style="
+                    height: 410px;
+                    overflow-y: scroll;
+                    overflow-x:  hidden;
+                    ">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
                   <div class="dropdown">
-                    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" style="background-color: #1093a7">
                         To Do
                         <b class="caret"></b>
                     </a>
@@ -343,7 +376,7 @@ pageEncoding="ISO-8859-1"%>
                     </ul>
                 </div>
                 <div class="checkbox">
-                    <label style="font-size: 2em">
+                    <label style="font-size: 1.5em">
                         <input type="checkbox" name="headerTask">
                         Renew Database Connection
 
@@ -353,9 +386,7 @@ pageEncoding="ISO-8859-1"%>
                 <div class = "col-md-offset-1" style="color: #000000">
                     This video shows database connectivity with SQLyog using JDBC.
                 </div>
-            </div>
-            <div class="modal-body">
-                <hr></hr>
+                <hr>
                 <div class="checkbox col-md-offset-1">
                     <label>
                         <input type="checkbox" name="subTask">
@@ -369,20 +400,72 @@ pageEncoding="ISO-8859-1"%>
                     </label>
                 </div>
                 <div class="col-md-offset-1">
-                    <button type="button" class="btn btn-primary">+ Add Subtask</button>
+                    <button type="button" class="btn btn-primary" style="background-color: #589ba4">+ Add Subtask</button>
                 </div>
-                <hr></hr>
-                <div class="row" style="color: #000000;">
+
+                <hr>
+
+
+
+                <div style="color: #000000;">
                     <img src="/SoaBaseCode/img/horse-icon.png" style="height: 30px;"> Trina Mae Louise
+                    <img src="/SoaBaseCode/img/calendar.png" style="height: 30px;" class="col-md-offset-1"> Mar 1
+                    <select class="col-md-offset-1" style="height: 33px !important; margin-top: -13px;">
+                        <option value="">Priority</option>
+                        <option value="low"> Low </option>
+                        <option value="medium"> Medium </option>
+                        <option value="high"> High </option>
+                    </select>
                 </div>
-                
+
+                <div>
+                    <h6 style="color: #303030; padding-top: 30px;">
+                        <b>Comments</b>
+                    </h6>
+                </div>
+
+                <div style="color: #000000;">
+                    <img src="/SoaBaseCode/img/horse-icon.png" style="height: 30px;"> Dane
+                    <span style="font-size: 10px; color: #303030 !important;">    Feb 28 9:30 PM</span>
+                    <div class="col-md-offset-1" style="font-size: 13px;">Yes, close the old database connection.</div>
+                </div>
+
+                <div>
+                    <textarea class="form-control" placeholder="Write a comment..." rows="5" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;"></textarea>
+                    <button type="button" class="btn btn-primary" style="background-color: #589ba4">Comment</button>
+                </div>
+
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+
+            <div>
+                <h6 style="color: #000000">
+                    <b>Logs</b>
+                </h6>
+                <div style="color: #000000">
+                    <div style="font-size: 13px;">Yukari added a task.</div>
+                    <div style="font-size: 10px;">Feb 27 8:09 PM</div>
+                </div>
+                <hr>
+                <div style="color: #000000">
+                    <div style="font-size: 13px;">Yukari set task priority to 2.</div>
+                    <div style="font-size: 10px;">Feb 27 8:09 PM</div>
+                </div>
+                <hr>
+                <div style="color: #000000">
+                    <div style="font-size: 13px;">Yukari set deadline to Mar 1.</div>
+                    <div style="font-size: 10px;">Feb 27 8:09 PM</div>
+                </div>
+
             </div>
         </div>
+
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" style="background-color: #589ba4">Save changes</button>
+        </div>
     </div>
+</div>
 </div>
 <!-- Modal -->
 </body>
@@ -398,8 +481,8 @@ pageEncoding="ISO-8859-1"%>
 <script src="../js/common.js"></script>
 <script src="../lib/js/jquery.blockUI.js"></script>
 <script>
-	$(document).ready(function() {
-		bindUserFormEvents();
-	});
+   $(document).ready(function() {
+      bindUserFormEvents();
+  });
 </script>
 </html>
