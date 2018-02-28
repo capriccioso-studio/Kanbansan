@@ -21,11 +21,12 @@
  <div class="header header-filter" >
 	<div class="container">
 		<div class ="row">
-			<form class="form">
+			<form action="${pageContext.request.contextPath}/saveUser" method="post">
 				<div class="col-md-6 col-md-offset-3 col-sm-4 col-sm-offset-2">
 					<div class = "row" style="padding-top: 30px; text-align: center;">
 						<img src="/SoaBaseCode/img/kanbansan-logo-white.png" style="width: 250px;">
 					</div>
+					
 					<div class ="card card-signup">
 						<div class="header header-primary text-center">
 	                        <h3>Sign Up</h3>
@@ -74,7 +75,7 @@
 							<div class="row" style="text-align: center;">
 								<div style="text-align: center;">
 									<div style="padding-top: 40px !important; text-align: center;">
-										<button id = "save-btn" class = "btn btn-primary" style="background-color: #589ba4 !important;">Register</button>
+										<input type="submit" class = "btn btn-primary" value="Sign up" style="background-color: #589ba4 !important;"> 
 									</div>						
 									
 								</div>
