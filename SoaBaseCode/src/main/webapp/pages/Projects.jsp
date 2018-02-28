@@ -40,6 +40,15 @@
                 <div style="padding-left: 28px; padding-top: 50px; font-size: 18px; color: #90b2b9;">
                     Members (5)
                 </div>
+                <ul style="list-style: none; margin-left: -10px;">
+                    <li style="padding-top: 20px;">
+                        <img src="/SoaBaseCode/img/cielo-icon.png">
+                        <p style="color: #FFFFFF !important;"> Yukatrina</p>
+                    </li>
+                    <li>
+                        <p style="color: #FFFFFF !important;"> Shell Low</p>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="main-panel" style="background-color: #1093a7; color:#FFFFFF">
