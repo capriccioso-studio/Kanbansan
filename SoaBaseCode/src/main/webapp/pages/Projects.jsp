@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </div>
-        <div class="main-panel">
+        <div class="main-panel" style="background-color: #1093a7; color:#FFFFFF">
             <nav class="navbar navbar-transparent navbar-absolute" style="background-color: #FFFFFF; margin-left: 10px;">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -118,17 +118,17 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
 
-                            <button type ="button" class="btn btn-white card" data-toggle = "modal" data-target = "#exampleModal">
-                                <div class="card-content">
-                                    <p class="category">Priority 1</p>
-                                    <h5 class="title">
-                                        Screw module 2x
+                            <button type ="button" class="btn btn-white card" data-toggle = "modal" data-target = "#exampleModal" style = "height: 130px;">
+                                <div class="card-content" style = "text-align: left; margin-left: -28px; text-transform: none;">
+                                    <p class="category" style="font-size: 13px !important; margin-top: -10px; font-family: Helvetica, sans-serif !important;">Priority 1</p>
+                                    <h5 class="title" style = "color: #000000; font-size: 17.5px !important; margin-bottom: 15px;">
+                                       Check this Module
                                     </h5>
                                 </div>
-                                <div class="card-footer">
+                                <div class="card-footer" style = "text-align: left; margin-left: -10px; text-transform: none;  margin-top: -10px;">
                                     <div class="stats">
-                                        <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: Trina</a>
+                                        <i class="material-icons" style="margin-top: -12px;">person</i>
+                                        <a href="#pablo" style="color: #1093a7; margin-top: 10px;">Assigned to: Yukatrina</a>
                                     </div>
                                 </div>
                             </button>
@@ -138,13 +138,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 1</p>
                                     <h5 class="title">
-                                        Imo mama i develop
+                                        Redesign UI
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo">Assigned to: Jake Zyrus</a>
                                     </div>
                                 </div>
                             </div>
@@ -154,13 +154,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 1</p>
                                     <h5 class="title">
-                                        Validatingg
+                                        Setup Management
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Chem Kim </a>
                                     </div>
                                 </div>
                             </div>
@@ -170,13 +170,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 1</p>
                                     <h5 class="title">
-                                        Done na siguro ni
+                                        Project Setup
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Trina </a>
                                     </div>
                                 </div>
                             </div>
@@ -189,13 +189,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 2</p>
                                     <h5 class="title">
-                                        Screw module 2
+                                        Create Modals
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: Trina</a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Xander Ford</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,13 +205,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 2</p>
                                     <h5 class="title">
-                                        Imo mama i develop
+                                        Setup Database
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Dane Yel </a>
                                     </div>
                                 </div>
                             </div>
