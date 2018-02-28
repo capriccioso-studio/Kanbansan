@@ -37,6 +37,26 @@
                         </a>
                     </li>
                 </ul>
+                <div style="padding-left: 28px; padding-top: 50px; font-size: 18px; color: #90b2b9;">
+                    Members (5)
+                </div>
+                <ul class="nav" style="list-style: none; margin-left: 30px;">
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/yes-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Yukatrina
+                    </li>
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/cielo-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Shell Low
+                    </li>
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/user-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Jake Zyrus
+                    </li>
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/kim-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Chem Kim
+                    </li>
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/dane-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Dane Yel
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="main-panel" style="background-color: #1093a7; color:#FFFFFF">
@@ -86,7 +106,7 @@
                         </ul>
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group  is-empty">
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="text" class="form-control" placeholder="Search" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
                                 <span class="material-input"></span>
                             </div>
                             <button type="submit" class="btn btn-white btn-round btn-just-icon">
@@ -102,16 +122,16 @@
 
                     <div class = "row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center" style="font-weight: bold;">To-do's</h4>
+                            <h4 class = "text-center" style="font-weight: bold; padding-left: -10px;">To-do's</h4>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center">In Progress</h4>
+                            <h4 class = "text-center" style="font-weight: bold;">In Progress</h4>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center">Validation</h4>
+                            <h4 class = "text-center" style="font-weight: bold;">To Validate</h4>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <h4 class = "text-center">Done</h4>
+                            <h4 class = "text-center" style="font-weight: bold;">Done</h4>
                         </div>
                     </div>
 <!-- Priority 1 -->
