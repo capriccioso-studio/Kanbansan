@@ -40,13 +40,21 @@
                 <div style="padding-left: 28px; padding-top: 50px; font-size: 18px; color: #90b2b9;">
                     Members (5)
                 </div>
-                <ul style="list-style: none; margin-left: -10px;">
-                    <li style="padding-top: 20px;"> 
-                        <img src="/SoaBaseCode/img/cielo-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Yukatrina
+                <ul class="nav" style="list-style: none; margin-left: 30px;">
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/yes-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Yukatrina
                     </li>
-                    <li> 
+                    <li style="margin-bottom: 20px;"> 
                         <img src="/SoaBaseCode/img/cielo-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Shell Low
                     </li>
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/user-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Jake Zyrus
+                    </li>
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/kim-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Chem Kim
+                    </li>
+                    <li style="margin-bottom: 20px;"> 
+                        <img src="/SoaBaseCode/img/dane-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Dane Yel
                     </li>
                 </ul>
             </div>
