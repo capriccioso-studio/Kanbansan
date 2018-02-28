@@ -144,7 +144,7 @@
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo">Assigned to: Jake Zyrus</a>
                                     </div>
                                 </div>
                             </div>
@@ -154,13 +154,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 1</p>
                                     <h5 class="title">
-                                        Validatingg
+                                        Setup Management
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Chem Kim </a>
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Trina </a>
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@
                                 <div class="card-content">
                                     <p class="category">Priority 2</p>
                                     <h5 class="title">
-                                        Screw module 2
+                                        Create Modals
                                     </h5>
                                 </div>
                                 <div class="card-footer">
@@ -205,13 +205,13 @@
                                 <div class="card-content">
                                     <p class="category">Priority 2</p>
                                     <h5 class="title">
-                                        Imo mama i develop
+                                        Setup Database
                                     </h5>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">person</i>
-                                        <a href="#pablo">Assigned to: </a>
+                                        <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Dane Yel </a>
                                     </div>
                                 </div>
                             </div>
