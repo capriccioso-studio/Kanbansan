@@ -16,37 +16,69 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body>
+<body style="background-color: #1093a7;">
  <div class="wrapper">
  <div class="header header-filter" >
 	<div class="container">
 		<div class ="row">
 			<form class="form">
 				<div class="col-md-6 col-md-offset-3 col-sm-4 col-sm-offset-2">
+					<div class = "row">
+						<img src="/img/kanbansan-logo-white.png">
+					</div>
 					<div class ="card card-signup">
 						<div class="header header-primary text-center">
-	                        <h4>Sign Up</h4>
+	                        <h3>Sign Up</h3>
 	                    </div>
 	                    <p class="text-divider"></p>
 	                    <div class="content">
-	                    	<div class = "col-md-6">
-	                    		<div class="input-group">
-	                    			<input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Username" required autofocus>
+	                    	<div class = "row">
+	                    		<div class = "col-md-6">
+	                    			<div class="col-md-10 col-md-offset-1">
+	                    				<input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Username" required autofocus>
+	                    			</div>
+	                    			
+								</div>
+	                    	</div>
+	                    	<div class="row">
+	                    		<div class = "col-md-6">
+	                    			<div class="col-md-10 col-md-offset-1">
+	                    				<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "First Name" required autofocus>
+	                    			</div>
+									
+								</div>
+								<div class = "col-md-6">
+									<div class="col-md-10">
+										<input id="lastName" type ="text" class ="form-control" name = "lastName" placeholder = "Last Name" required autofocus>
+									</div>
+									
+								</div>
+	                    	</div>
+	                    	<div class="row">
+	                    		<div class = "col-md-6">
+	                    			<div class="col-md-10 col-md-offset-1">
+	                    				<input id="email" type ="text" class ="form-control" name = "email" placeholder = "Email" required autofocus>
+	                    			</div>
+									
+								</div>
+								<div class = "col-md-6">
+									<div class="col-md-10">
+										<input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus>
+									</div>
+									
+								</div>
+	                    	</div>
+	                    	<div class="row">
+
+	                    	</div>
+							<div class="row">
+								<div class= "col-md-6">
+									<div class="col-md-6 col-md-offset-9 col-sm-4 col-sm-offset-2" style="padding-top: 60px !important;">
+										<button id = "save-btn" class = "btn btn-primary" style="background-color: #589ba4 !important;">Register</button>
+									</div>						
+									
 								</div>
 							</div>
-							<div class = "col-md-6">
-								<input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "First Name" required autofocus>
-							</div>
-							<div class = "col-md-6">
-								<input id="lastName" type ="text" class ="form-control" name = "lastName" placeholder = "Last Name" required autofocus>
-							</div>
-							<div class = "col-md-6">
-								<input id="email" type ="text" class ="form-control" name = "email" placeholder = "Email" required autofocus>
-							</div>
-							<div class = "col-md-6">
-								<input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus>
-							</div>							
-							<button id = "save-btn" class = "btn btn-primary">Register</button>
 							
 	                    </div>
 					</div>
