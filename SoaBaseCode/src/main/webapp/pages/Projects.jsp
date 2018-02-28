@@ -41,12 +41,12 @@
                     Members (5)
                 </div>
                 <ul style="list-style: none; margin-left: -10px;">
-                    <li style="padding-top: 20px;">
-                        <img src="/SoaBaseCode/img/cielo-icon.png">
-                        <p style="color: #FFFFFF !important;"> Yukatrina</p>
+                    <li style="padding-top: 20px;"> 
+                        <img src="/SoaBaseCode/img/cielo-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Yukatrina
                     </li>
-                    <li>
-                        <p style="color: #FFFFFF !important;"> Shell Low</p>
+                    <li> 
+                        <img src="/SoaBaseCode/img/cielo-icon.png" style="height: 30px; color: #FFFFFF !important; padding-right: 10px;"> Shell Low
+                    </li>
                     </li>
                 </ul>
             </div>
