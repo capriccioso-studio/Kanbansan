@@ -38,9 +38,9 @@
                         </a>
                     </li>
                 </ul>
-                <div style="background-color: #FFFFFF; width: 220px; margin-left: 28px;">  <hr> </div>
+                <div style="width: 220px; margin-left: 28px;">  <hr style="border-color: #589ba4;"> </div>
                
-                <div style="padding-left: 28px; padding-top: 50px; font-size: 18px; color: #90b2b9;">
+                <div style="padding-left: 28px; padding-top: 10px; font-size: 18px; color: #90b2b9;">
                     Members (5)
                 </div>
                 <ul class="nav" style="list-style: none; margin-left: 30px;">
@@ -374,56 +374,45 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <form action="${pageContext.request.contextPath}/saveUser" method="POST">
-                
-                        <div class="header header-primary text-center">
-                            <h3>Test Add Task</h3>
+        <form action="${pageContext.request.contextPath}/saveUser" method="POST">           
+            <div class="header header-primary text-center">
+                <h3 style="color: #303030 !important;"> Create New Task </h3>
+            </div>
+            <p class="text-divider"></p>
+            <div class="content">
+                <div class = "row">
+                    <div class = "col-md-6">
+                        <div class="col-md-10 col-md-offset-1"">
+                            <input id="user_id" style = "width: 450px; margin-left: 15px;"  type ="text" class ="form-control" name = "user_id" placeholder = "Task Name"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+                        </div>                                    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-md-6">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="firstName" style = "width: 450px; margin-left: 15px;"  type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
                         </div>
-                        <p class="text-divider"></p>
-                        <div class="content">
-                            <div class = "row">
-                                <div class = "col-md-6">
-                                    <div class="col-md-10 col-md-offset-1"">
-                                        <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Task Name"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class = "col-md-6">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
-                                    </div>
-                                    
-                                </div>
-                            </div>
+                        
+                    </div>
+                </div>
 
-                            <div class="row">
-                                <div class = "col-md-6">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Assigned"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="row" style="text-align: center;">
-                                <div style="text-align: center;">
-                                    <div style="padding-top: 40px !important; text-align: center;">
-                                        <input type="submit" class = "btn btn-primary" value="Sign up" style="background-color: #589ba4 !important;"> 
-                                    </div>                      
-                                    
-                                </div>
-                            </div>
-
-
-
-                            <div class="row" style="text-align: center; padding-top: 10px; padding-bottom: 10px !important;">
-                                <a href="/SoaBaseCode" style="color: #589ba4;">Already have an account? Log in.</a>
-                            </div>
-                            
-                            
-                        </div>
-            </form>
+                <div class="row">
+                    <div class = "col-md-6">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="firstName" style = "width: 450px; margin-left: 15px;"  type ="text" class ="form-control" name = "firstName" placeholder = "Assigned"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+                        </div>               
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <div style="text-align: center;">
+                        <div style="padding-top: 40px !important; text-align: center;">
+                            <input type="submit" class = "btn btn-primary" value="Create Task" style="background-color: #589ba4 !important;"> 
+                        </div>                      
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
       </div>
     </div>
   </div>
