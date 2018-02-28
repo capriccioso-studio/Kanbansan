@@ -373,6 +373,10 @@
 <div class="modal fade" id="emptyTask" tabindex="-1" role="dialog" aria-labelledby="emptyTask" aria-hidden="true" style="height: 750px;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+    <div class = "modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+    </div>
       <div class="modal-body">
         <form action="${pageContext.request.contextPath}/saveUser" method="POST">           
             <div class="header header-primary text-center">
@@ -422,8 +426,7 @@
                     <div>
                         <div style="padding-top: 40px !important;">
                             <input type="submit" class = "btn btn-primary" value="Create Task" style="background-color: #589ba4 !important;"> 
-                        </div>                      
-                        
+                        </div>                          
                     </div>
                 </div>
             </div>
