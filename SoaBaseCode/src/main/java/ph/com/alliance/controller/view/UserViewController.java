@@ -27,5 +27,14 @@ public class UserViewController {
     	map.addAttribute("user", user);
         return "/Projects";
     }
+    
+    @RequestMapping(value = "/testProjects", method = RequestMethod.GET)
+    public String viewMessagesss(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
+    	System.out.println("@/request VIEW CONTROLLER CALLED.");
+    	User user = userService.selectUser(request.getParameter("id"));
+    	
+    	map.addAttribute("user", user);
+        return "/testProjects";
+    }
 
 }

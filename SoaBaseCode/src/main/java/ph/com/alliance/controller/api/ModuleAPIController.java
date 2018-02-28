@@ -56,7 +56,7 @@ public class ModuleAPIController {
     	/*if(!dbSvc.createUser(this.convertToEntity(u))) {
     		u = null;
     	}*/
-    	return "redirect:user/projects?id="+u.getUser_id();
+    	return "redirect:user/testProjects?id="+u.getUser_id();
     }
     
     /**
