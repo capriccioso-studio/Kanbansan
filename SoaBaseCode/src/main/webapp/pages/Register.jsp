@@ -81,7 +81,7 @@
 								</div>
 							</div>
 							<div class="row" style="text-align: center; padding-top: 10px; padding-bottom: 10px !important;">
-								<a href="" style="color: #589ba4;">Already have an account? Log in.</a>
+								<a href="/SoaBaseCode" style="color: #589ba4;">Already have an account? Log in.</a>
 							</div>
 							
 							
