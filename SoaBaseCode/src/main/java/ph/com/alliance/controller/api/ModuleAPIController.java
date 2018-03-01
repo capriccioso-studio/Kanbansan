@@ -75,7 +75,7 @@ public class ModuleAPIController {
     	
     	
     	
-    	return "redirect:user/Projects?id="+pUser.getUser_id();
+    	return "redirect:/user/Projects?id="+pUser.getUser_id();
     }
     
     @RequestMapping(value = "/login", method = RequestMethod.POST)
@@ -112,16 +112,9 @@ public class ModuleAPIController {
     	pTask.setTask_id(generatePrimaryKey());
     	pTask.setTaskName(request.getParameter("taskName"));
     	pTask.setTaskDescription(request.getParameter("taskDescription"));
-    	
     	pTask.setProject(projectService.selectProject("1"));
+    	pTask.setAssignedMember(memberService.selectProjectMember(request.getParameter("assigned")));
 
-    		if(memberService.selectProjectMember(request.getParameter("assigned")) != null)
-    		{
-    			pTask.setAssignedMember(memberService.selectProjectMember(request.getParameter("assigned")));
-    		}
-    		else
-    			pTask.setAssignedMember(null);
-    		
     		
     		if(!taskService.createTask(pTask))
         		pTask = null;

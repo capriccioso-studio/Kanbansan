@@ -222,23 +222,7 @@ pageEncoding="ISO-8859-1"%>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="category">Priority 1</p>
-                            <h5 class="title">
-                                Project Setup
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="material-icons">person</i>
-                                <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Trina </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- Priority 2 -->
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -340,22 +324,7 @@ pageEncoding="ISO-8859-1"%>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="category">Priority 3</p>
-                            <h5 class="title">
-                                Touch Spaghet
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="material-icons">person</i>
-                                <a href="#pablo" style="color: #1093a7 !important;">Assigned to: Papa Bear</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="card">
                         <div class="card-content">
@@ -517,7 +486,7 @@ pageEncoding="ISO-8859-1"%>
             </div>
             <div class="modal-body">
                 <form action="${pageContext.request.contextPath}/project/add" method="POST">   
-                <input type="hidden" name="userid" value=${user.user_id} >        
+                <input type="text" name="userid" value="${user.user_id}" >        
                     <div class="header header-primary text-center">
                         <h3 style="color: #303030 !important; margin-top: -20px;"> Add New Project </h3>
                     </div>
@@ -581,7 +550,7 @@ pageEncoding="ISO-8859-1"%>
                 <span aria-hidden="true">&times;</span>
             </div>
             <div class="modal-body">
-                <form action="${pageContext.request.contextPath}/saveUser" method="POST">           
+                <form action="${pageContext.request.contextPath}/saveTask" method="POST">           
                     <div class="header header-primary text-center">
                         <h3 style="color: #303030 !important; margin-top: -20px;"> Create New Task </h3>
                     </div>
@@ -590,14 +559,14 @@ pageEncoding="ISO-8859-1"%>
                         <div class = "row">
                             <div class = "col-md-6">
                                 <div class="col-md-10 col-md-offset-1"">
-                                    <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Task Name" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
+                                    <input id="user_id" type ="text" class ="form-control" name = "taskName" placeholder = "Task Name" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
                                 </div>                                    
                             </div>
                         </div>
                         <div class="row">
                             <div class = "col-md-6">
                                 <div class="col-md-10 col-md-offset-1">
-                                    <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
+                                    <input id="firstName" type ="text" class ="form-control" name = "taskDescription" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
                                 </div>
 
                             </div>
@@ -605,7 +574,7 @@ pageEncoding="ISO-8859-1"%>
                         <div class="row">
                             <div class = "col-md-6">
                                 <div class="col-md-10 col-md-offset-1">
-                                    <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Assignee"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px; ">
+                                    <input id="firstName" type ="text" class ="form-control" name = "assigned" placeholder = "Assignee"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px; ">
                                 </div>               
                             </div>
                         </div>
@@ -632,6 +601,8 @@ pageEncoding="ISO-8859-1"%>
                                 </div>                          
                             </div>
                         </div>
+                        	<input type = "text" name = "redirect" value = "${user.user_id}">
+	                    	<input type = "text" name = "projectID" value = "1">
                     </div>
                 </form>
             </div>

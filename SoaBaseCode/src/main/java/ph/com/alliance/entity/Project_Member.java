@@ -29,7 +29,7 @@ public class Project_Member implements Serializable{
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="project_id")
 	private Project project_id;
-	
+	private String role;
 	
 	
 	public String getProject_member_id() {
@@ -44,16 +44,16 @@ public class Project_Member implements Serializable{
 		return user_id;
 	}
 
-	public void setUser_id(User user_id) {
-		this.user_id = user_id;
+	public void setUser_id(User user) {
+		this.user_id = user;
 	}
 
 	public Project getProject_id() {
 		return project_id;
 	}
 
-	public void setProject_id(Project project_id) {
-		this.project_id = project_id;
+	public void setProject_id(Project project) {
+		this.project_id = project;
 	}
 
 	public String getRole() {
@@ -64,5 +64,5 @@ public class Project_Member implements Serializable{
 		this.role = role;
 	}
 
-	private String role;
+
 }

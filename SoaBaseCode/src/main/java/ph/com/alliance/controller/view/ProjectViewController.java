@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import ph.com.alliance.entity.Project;
 import ph.com.alliance.entity.Project_Member;
 import ph.com.alliance.entity.User;
+import ph.com.alliance.service.DBKanbansanProjectMemberService;
 import ph.com.alliance.service.DBKanbansanProjectService;
 import ph.com.alliance.service.DBKanbansanUserService;
 
@@ -29,12 +30,18 @@ public class ProjectViewController {
 	@Autowired
 	DBKanbansanProjectService projService;
 	
+
+	@Autowired
+	DBKanbansanProjectMemberService projMemberService;
+	
 	
 	
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String viewMessages(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
+    public String addProject(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
     	System.out.println("@/request PROJECT CONTROLLER CALLED.");
     	//User user = userService.selectUser(request.getParameter("id"));
+    	
+    	System.out.println("Requested persistent " + request.getParameter("userid"));
     	
     	String projectName = request.getParameter("projName");
     	String projectDesc = request.getParameter("projDesc");
@@ -44,16 +51,26 @@ public class ProjectViewController {
     	pProject.setProjectName(projectName);
     	pProject.setProjectDescription(projectDesc);
     	
-    	projService.createProject(pProject);
+    	if(!projService.createProject(pProject))
+    		pProject = null;
+    	else
+    	{
+        	Project_Member projmember = new Project_Member();
+        	projmember.setProject_member_id("sdsf");
+        	//projmember.setUser_id(userService.selectUser(request.getParameter("userid")));
+        	//projmember.setRole("PL");
+        	//projmember.setProject_id(pProject);
+        	
+        	//if(!projMemberService.createProjectMember(projmember))
+        		//projmember = null;
+        	//System.out.println("Project Member " + projmember.getUser_id().getFirstName() + " added to project: " + pProject.getProjectName());
+    	}
     	
-    	Project_Member projmember = new Project_Member();
-    	projmember.setProject_member_id(generatePrimaryKey());
-    	projmember.setUser_id(userService.selectUser(request.getParameter("userid")));
-    	
+
     	
     	
     	//map.addAttribute("user", user);
-        return "/Projects";
+        return "redirect:/user/Projects?id=" + request.getParameter("userid");
     }
     
     private String generatePrimaryKey() {

@@ -22,9 +22,9 @@ public class UserViewController {
     @RequestMapping(value = "/Projects", method = RequestMethod.GET)
     public String viewMessages(HttpServletRequest request, HttpServletResponse response, ModelMap map) {
     	System.out.println("@/request VIEW CONTROLLER CALLED.");
-    	//User user = userService.selectUser(request.getParameter("id"));
+    	User user = userService.selectUser(request.getParameter("id"));
     	
-    	//map.addAttribute("user", user);
+    	map.addAttribute("user", user);
         return "/Projects";
     }
 
