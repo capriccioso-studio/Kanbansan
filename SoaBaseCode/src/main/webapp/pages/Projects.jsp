@@ -475,7 +475,7 @@ pageEncoding="ISO-8859-1"%>
 
     </div>
 
-    <div>
+    <div style="padding-left: 30px;">
         <h6 style="color: #000000">
             <b>Logs</b>
         </h6>
@@ -493,7 +493,6 @@ pageEncoding="ISO-8859-1"%>
             <div style="font-size: 13px;">Yukari set deadline to Mar 1.</div>
             <div style="color: #589ba4; font-size: 10px;">Feb 27 8:09 PM</div>
         </div>
-
     </div>
 </div>
 
