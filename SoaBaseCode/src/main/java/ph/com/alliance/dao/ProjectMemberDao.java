@@ -12,6 +12,6 @@ public interface ProjectMemberDao {
 	
 	public boolean deleteProjectMember(EntityManager pEM, Project_Member pProjectMember);
 	
-	public Project_Member selectProjectMember(EntityManager pEM, int pProjectMember_id);
+	public Project_Member selectProjectMember(EntityManager pEM, String pProjectMember_id);
 	
 }

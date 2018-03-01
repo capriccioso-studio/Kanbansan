@@ -20,8 +20,7 @@ public class Project_Member implements Serializable{
 	
 	@Id
 	@Column(nullable = false)
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int project_member_id;
+	private String project_member_id;
 	
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="user_id")
@@ -33,11 +32,11 @@ public class Project_Member implements Serializable{
 	
 	
 	
-	public int getProject_member_id() {
+	public String getProject_member_id() {
 		return project_member_id;
 	}
 
-	public void setProject_member_id(int project_member_id) {
+	public void setProject_member_id(String project_member_id) {
 		this.project_member_id = project_member_id;
 	}
 

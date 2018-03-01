@@ -87,7 +87,7 @@ public class TaskDaoImpl implements TaskDao {
 	}
 	
 	@Override
-	public Task selectTask(EntityManager pEM, int pTask_id)
+	public Task selectTask(EntityManager pEM, String pTask_id)
 	{
 		Task task =null;
 		
