@@ -63,7 +63,8 @@ pageEncoding="ISO-8859-1"%>
                     </li>
                     <li style="padding-left: 30px;">
                         <img src="/SoaBaseCode/img/add-member.png" style="height: 25px;">
-                        <button type="button" style="width: 100px; background-color: transparent; border-style: none; padding-left: -30px;">
+                        <button type="button" data-toggle="modal" data-target="#newProject" style="width: 100px;
+                            background-color: transparent; border-style: none; padding-left: -30px;">
                             <p> Add Project </p> 
                         </button>
                     </li>
@@ -94,7 +95,7 @@ pageEncoding="ISO-8859-1"%>
         </div>
         <div class="main-panel" style="background-color: #def2f3; color:#3b7880">
 
-            <button type = "button" class="fab" data-toggle="modal" data-target="#emptyTask" title = "Create SMP" style="background-color: #1ad3f1;">
+            <button type = "button" class="fab" data-toggle="modal" data-target="#emptyTask" style="background-color: #1ad3f1;">
             +</button>
 
             <nav class="navbar navbar-transparent navbar-absolute" style="background-color: #1093a7; margin-left: 10px; color: #FFFFFF";>
@@ -118,13 +119,13 @@ pageEncoding="ISO-8859-1"%>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#"> has been added to the team</a>
+                                        <a href="#"> Jake Zyrus has been added to the team</a>
                                     </li>
                                     <li>
-                                        <a href="#"> has been added to the team</a>
+                                        <a href="#"> Yukatrina has been added to the team</a>
                                     </li>
                                     <li>
-                                        <a href="#"> has been added to the team</a>
+                                        <a href="#"> Shell Low has been added to the team</a>
                                     </li>
                                 </ul>
                             </li>
@@ -490,81 +491,150 @@ pageEncoding="ISO-8859-1"%>
     </div>
 
 
-    <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" style="background-color: #589ba4">Save changes</button>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" style="background-color: #589ba4">Save changes</button>
+        </div>
     </div>
-</div>
-</div>
-</div>
-<!-- Modal -->
-<!-- Add Project -->
-<div class="modal fade" id="emptyTask" tabindex="-1" role="dialog" aria-labelledby="emptyTask" aria-hidden="true" style="height: 750px;">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class = "modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </div>
-            <div class="modal-body">
-                <form action="${pageContext.request.contextPath}/saveUser" method="POST">           
-                    <div class="header header-primary text-center">
-                        <h3 style="color: #303030 !important; margin-top: -20px;"> Create New Task </h3>
-                    </div>
-                    <p class="text-divider"></p>
-                    <div class="content">
-                        <div class = "row">
-                            <div class = "col-md-6">
-                                <div class="col-md-10 col-md-offset-1"">
-                                    <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Task Name" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
-                                </div>                                    
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class = "col-md-6">
-                                <div class="col-md-10 col-md-offset-1">
-                                    <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
-                                </div>
+    </div>
+    </div>
+    <!-- Modal -->
 
+    <!-- Add Project Modal -->
+    <div class="modal fade" id="newProject" tabindex="-1" role="dialog" aria-labelledby="newProject" aria-hidden="true" style="height: 750px;">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class = "modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form action="${pageContext.request.contextPath}/saveUser" method="POST">           
+                        <div class="header header-primary text-center">
+                            <h3 style="color: #303030 !important; margin-top: -20px;"> Create New Task </h3>
+                        </div>
+                        <p class="text-divider"></p>
+                        <div class="content">
+                            <div class = "row">
+                                <div class = "col-md-6">
+                                    <div class="col-md-10 col-md-offset-1"">
+                                        <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Task Name" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class = "col-md-6">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class = "col-md-6">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Assignee"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px; ">
+                                    </div>               
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <div class = "col-md-6" style="padding-top: 10px; padding-left: 30px; color: #303030;"> 
+                                    <p style="margin-left: 35px;"> Due Date </p>
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="duedate" type="date" name="Due Date" style="margin-top: -10px; border-style: solid; border-color: #858585; border-width: 1px; text-indent: 3px; border-radius: 5px;">
+                                    </div>               
+                                </div>
+                                <div class = "cold col-md-6" style="padding-top: 10px; padding-left: 10px; color: #303030;">
+                                    <p style="margin-left: -20px;"> Priority </p>
+                                    <select style="margin-left: -20px; height: 33px !important; margin-top: -13px; border-style: solid; border-color: #858585; border-width: 1px; text-indent: 3px; border-radius: 5px;"">
+                                        <option value="low" style="text-indent: 3px;"> Low </option>
+                                        <option value="medium"> Medium </option>
+                                        <option value="high"> High </option>
+                                    </select>        
+                                </div>
+                            </div>
+                            <div class="row" style="text-align: right; padding-right:60px; ">
+                                <div>
+                                    <div style="padding-top: 40px !important;">
+                                        <input type="submit" class = "btn btn-primary" value="Create Task" style="background-color: #589ba4 !important;"> 
+                                    </div>                          
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class = "col-md-6">
-                                <div class="col-md-10 col-md-offset-1">
-                                    <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Assignee"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px; ">
-                                </div>               
-                            </div>
-                        </div>
-                        <div class="row"> 
-                            <div class = "col-md-6" style="padding-top: 10px; padding-left: 30px; color: #303030;"> 
-                                <p style="margin-left: 35px;"> Due Date </p>
-                                <div class="col-md-10 col-md-offset-1">
-                                    <input id="duedate" type="date" name="Due Date" style="margin-top: -10px; border-style: solid; border-color: #858585; border-width: 1px; text-indent: 3px; border-radius: 5px;">
-                                </div>               
-                            </div>
-                            <div class = "cold col-md-6" style="padding-top: 10px; padding-left: 10px; color: #303030;">
-                                <p style="margin-left: -20px;"> Priority </p>
-                                <select style="margin-left: -20px; height: 33px !important; margin-top: -13px; border-style: solid; border-color: #858585; border-width: 1px; text-indent: 3px; border-radius: 5px;"">
-                                    <option value="low" style="text-indent: 3px;"> Low </option>
-                                    <option value="medium"> Medium </option>
-                                    <option value="high"> High </option>
-                                </select>        
-                            </div>
-                        </div>
-                        <div class="row" style="text-align: right; padding-right:60px; ">
-                            <div>
-                                <div style="padding-top: 40px !important;">
-                                    <input type="submit" class = "btn btn-primary" value="Create Task" style="background-color: #589ba4 !important;"> 
-                                </div>                          
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal -->
+
+    <!-- Add Project Modal end-->
+    <!-- Add Task Modal -->
+    <div class="modal fade" id="emptyTask" tabindex="-1" role="dialog" aria-labelledby="emptyTask" aria-hidden="true" style="height: 750px;">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class = "modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form action="${pageContext.request.contextPath}/saveUser" method="POST">           
+                        <div class="header header-primary text-center">
+                            <h3 style="color: #303030 !important; margin-top: -20px;"> Create New Task </h3>
+                        </div>
+                        <p class="text-divider"></p>
+                        <div class="content">
+                            <div class = "row">
+                                <div class = "col-md-6">
+                                    <div class="col-md-10 col-md-offset-1"">
+                                        <input id="user_id" type ="text" class ="form-control" name = "user_id" placeholder = "Task Name" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class = "col-md-6">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class = "col-md-6">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Assignee"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px; ">
+                                    </div>               
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <div class = "col-md-6" style="padding-top: 10px; padding-left: 30px; color: #303030;"> 
+                                    <p style="margin-left: 35px;"> Due Date </p>
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="duedate" type="date" name="Due Date" style="margin-top: -10px; border-style: solid; border-color: #858585; border-width: 1px; text-indent: 3px; border-radius: 5px;">
+                                    </div>               
+                                </div>
+                                <div class = "cold col-md-6" style="padding-top: 10px; padding-left: 10px; color: #303030;">
+                                    <p style="margin-left: -20px;"> Priority </p>
+                                    <select style="margin-left: -20px; height: 33px !important; margin-top: -13px; border-style: solid; border-color: #858585; border-width: 1px; text-indent: 3px; border-radius: 5px;"">
+                                        <option value="low" style="text-indent: 3px;"> Low </option>
+                                        <option value="medium"> Medium </option>
+                                        <option value="high"> High </option>
+                                    </select>        
+                                </div>
+                            </div>
+                            <div class="row" style="text-align: right; padding-right:60px; ">
+                                <div>
+                                    <div style="padding-top: 40px !important;">
+                                        <input type="submit" class = "btn btn-primary" value="Create Task" style="background-color: #589ba4 !important;"> 
+                                    </div>                          
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
 </body>
 <script src="../lib/js/jquery-1.10.1.min.js"></script>
 <script src="../lib/js/bootstrap.min.js"></script>
