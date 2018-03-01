@@ -61,6 +61,12 @@ pageEncoding="ISO-8859-1"%>
                             <p style="color: #FFFFFF !important;"> Project Two</p>
                         </a>
                     </li>
+                    <li>
+                        <img src="/SoaBaseCode/img/add-member.png" style="height: 30px;">
+                        <button type="button" style="width: 100px; background-color: transparent; border-style: none;">
+                            <p> Add Project </p> 
+                        </button>
+                    </li>
                 </ul>
                 <div style="width: 220px; margin-left: 28px;">  <hr style="border-color: #589ba4;"> </div>
                 
