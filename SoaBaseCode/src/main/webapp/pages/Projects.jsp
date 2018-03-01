@@ -423,6 +423,12 @@ pageEncoding="ISO-8859-1"%>
                     Open new connection
                 </label>
             </div>
+            <div class="checkbox col-md-offset-1">
+                <label>
+                    <input type="checkbox" name="subTask">
+                    <input id="task_id" type ="text" class ="form-control" name = "taskName" placeholder = "Enter subtask" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+                </label>
+            </div>
             <div class="col-md-offset-1">
                 <button type="button" class="btn btn-primary" style="background-color: #589ba4;">+ Add Subtask</button>
             </div>
