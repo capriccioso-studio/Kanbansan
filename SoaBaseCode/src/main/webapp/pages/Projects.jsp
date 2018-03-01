@@ -69,7 +69,7 @@ pageEncoding="ISO-8859-1"%>
                     </li>
                 </ul>
                 <div style="width: 220px; margin-left: 28px;">  <hr style="border-color: #589ba4;"> </div>
-                
+
                 <div style="padding-left: 28px; padding-top: 10px; font-size: 18px; color: #90b2b9;">
                     Members (5)
                 </div>
@@ -394,7 +394,7 @@ pageEncoding="ISO-8859-1"%>
                   <span aria-hidden="true">&times;</span>
               </button>
               <div class="dropdown">
-                <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" style="background-color: #1093a7">
+                <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" style="background-color: #1093a7;">
                     To Do
                     <b class="caret"></b>
                 </a>
@@ -430,7 +430,7 @@ pageEncoding="ISO-8859-1"%>
                 </label>
             </div>
             <div class="col-md-offset-1">
-                <button type="button" class="btn btn-primary" style="background-color: #589ba4">+ Add Subtask</button>
+                <button type="button" class="btn btn-primary" style="background-color: #589ba4;">+ Add Subtask</button>
             </div>
 
             <hr>
@@ -455,8 +455,8 @@ pageEncoding="ISO-8859-1"%>
             </div>
 
             <div style="color: #000000;">
-                <img src="/SoaBaseCode/img/horse-icon.png" style="height: 30px;"> Dane
-                <span style="font-size: 10px; color: #303030 !important;">    Feb 28 9:30 PM</span>
+                <img src="/SoaBaseCode/img/horse-icon.png" style="height: 30px;"> <b>Dane</b>
+                <span style="font-size: 10px; color: #589ba4 !important;"> Feb 28 9:30 PM</span>
                 <div class="col-md-offset-1" style="font-size: 13px;">Yes, close the old database connection.</div>
             </div>
 
@@ -472,18 +472,18 @@ pageEncoding="ISO-8859-1"%>
                 <b>Logs</b>
             </h6>
             <div style="color: #000000">
-                <div style="font-size: 13px;">Yukari added a task.</div>
-                <div style="font-size: 10px;">Feb 27 8:09 PM</div>
+                <div style="font-size: 13px">Yukari added a task.</div>
+                <div style="color: #589ba4; font-size: 10px;">Feb 27 8:09 PM</div>
             </div>
             <hr>
             <div style="color: #000000">
                 <div style="font-size: 13px;">Yukari set task priority to 2.</div>
-                <div style="font-size: 10px;">Feb 27 8:09 PM</div>
+                <div style="color: #589ba4; font-size: 10px;">Feb 27 8:09 PM</div>
             </div>
             <hr>
             <div style="color: #000000">
                 <div style="font-size: 13px;">Yukari set deadline to Mar 1.</div>
-                <div style="font-size: 10px;">Feb 27 8:09 PM</div>
+                <div style="color: #589ba4; font-size: 10px;">Feb 27 8:09 PM</div>
             </div>
 
         </div>
@@ -525,7 +525,7 @@ pageEncoding="ISO-8859-1"%>
                                 <div class="col-md-10 col-md-offset-1">
                                     <input id="firstName" type ="text" class ="form-control" name = "firstName" placeholder = "Task Description"  style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="row">
