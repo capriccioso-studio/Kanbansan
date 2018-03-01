@@ -13,6 +13,7 @@ pageEncoding="ISO-8859-1"%>
     <link rel="stylesheet" href="../css/media-queries.css" />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/SoaBaseCode/img/favicon.ico">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style type="text/css">
     .scrollbar {
@@ -556,7 +557,7 @@ pageEncoding="ISO-8859-1"%>
                         <div class="row" style="text-align: right; padding-right:60px; ">
                             <div>
                                 <div style="padding-top: 40px !important;">
-                                    <input type="submit" class = "btn btn-primary" value="Create Project" style="background-color: #589ba4 !important;"> 
+                                    <input type="submit" class = "btn btn-primary" value="Create" style="background-color: #589ba4 !important;"> 
                                 </div> 
                                 <div>
                                     <a href="" style="color: #589ba4;">or join a project</a>
