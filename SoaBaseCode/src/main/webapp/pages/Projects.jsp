@@ -61,9 +61,9 @@ pageEncoding="ISO-8859-1"%>
                             <p style="color: #FFFFFF !important;"> Project Two</p>
                         </a>
                     </li>
-                    <li>
-                        <img src="/SoaBaseCode/img/add-member.png" style="height: 30px;">
-                        <button type="button" style="width: 100px; background-color: transparent; border-style: none;">
+                    <li style="padding-left: 30px;">
+                        <img src="/SoaBaseCode/img/add-member.png" style="height: 25px;">
+                        <button type="button" style="width: 100px; background-color: transparent; border-style: none; padding-left: -30px;">
                             <p> Add Project </p> 
                         </button>
                     </li>
