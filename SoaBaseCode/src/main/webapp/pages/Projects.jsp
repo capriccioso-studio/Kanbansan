@@ -104,12 +104,6 @@ pageEncoding="ISO-8859-1"%>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">dashboard</i>
-                                    <p class="hidden-lg hidden-md">Dashboard</p>
-                                </a>
-                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">notifications</i>
@@ -129,9 +123,13 @@ pageEncoding="ISO-8859-1"%>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">person</i>
-                                    <p class="hidden-lg hidden-md">Profile</p>
+                                    <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="${pageContext.request.contextPath}/">Log Out</a>
+                                    </li>
+                                </ul>
                                 </a>
                             </li>
                         </ul>

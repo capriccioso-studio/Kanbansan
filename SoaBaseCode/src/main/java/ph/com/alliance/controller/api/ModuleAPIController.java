@@ -82,7 +82,6 @@ public class ModuleAPIController {
     public String login(HttpServletRequest request, HttpServletResponse response, ModelMap map)
     {
     	User pUser = new User();
-    	System.out.println("DICKCK");
     	pUser = userService.selectUser(request.getParameter("userName"));
 
 		if(pUser != null && pUser.getPassword().equals(request.getParameter("password")))
@@ -97,6 +96,13 @@ public class ModuleAPIController {
 		}
     	
     		
+    }
+    
+    @RequestMapping(value = "/logout", method = RequestMethod.POST)
+    public String logout(HttpServletRequest request, HttpServletResponse response, ModelMap map)
+    {
+    	
+		return "redirect:/";
     }
     
     @RequestMapping(value = "/saveTask", method = RequestMethod.POST)

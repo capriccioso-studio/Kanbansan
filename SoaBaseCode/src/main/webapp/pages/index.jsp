@@ -39,7 +39,7 @@
 	    <div class = "row">
 	        <div class = "col-md-6">
 	            <div class="col-md-5 col-sm-4">
-	                <input id="password" type ="text" class ="form-control" name = "password" placeholder = "Password" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
+	                <input id="password" type ="password" class ="form-control" name = "password" placeholder = "Password" required autofocus style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important;">
 	            </div>
 	                    			
 			</div>
