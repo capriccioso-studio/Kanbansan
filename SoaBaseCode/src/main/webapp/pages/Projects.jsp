@@ -515,7 +515,8 @@ pageEncoding="ISO-8859-1"%>
                 <span aria-hidden="true">&times;</span>
             </div>
             <div class="modal-body">
-                <form action="${pageContext.request.contextPath}/saveUser" method="POST">           
+                <form action="${pageContext.request.contextPath}/project/add" method="POST">   
+                <input type="hidden" name="userid" value=${user.user_id} >        
                     <div class="header header-primary text-center">
                         <h3 style="color: #303030 !important; margin-top: -20px;"> Add New Project </h3>
                     </div>
@@ -526,7 +527,7 @@ pageEncoding="ISO-8859-1"%>
                                 <div class="col-md-10 col-md-offset-1"">
                                     <div class="form-group">
                                         <label style="color: #589ba4;">PROJECT NAME</label>
-                                        <input type="text" value="" placeholder="Enter project name" class="form-control" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;"/>
+                                        <input type="text" name="projName" value="" placeholder="Enter project name" class="form-control" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;"/>
                                     </div>
                                 </div>                                    
                             </div>
@@ -536,7 +537,7 @@ pageEncoding="ISO-8859-1"%>
                                 <div class="col-md-10 col-md-offset-1">
                                     <div class="form-group">
                                         <label style="color: #589ba4;">PROJECT DESCRIPTION</label>
-                                        <input type="text" value="" placeholder="Enter project description" class="form-control" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;"/>
+                                        <input type="text" name="projDesc" value="" placeholder="Enter project description" class="form-control" style="background-image: linear-gradient(#1093a7, #1093a7), linear-gradient(#D2D2D2, #D2D2D2) !important; width: 450px; margin-left: 15px;"/>
                                     </div>
                                 </div>
 

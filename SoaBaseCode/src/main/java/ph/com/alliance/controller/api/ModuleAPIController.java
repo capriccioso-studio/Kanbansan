@@ -75,7 +75,7 @@ public class ModuleAPIController {
     	
     	
     	
-    	return "redirect:user/testProjects?id="+pUser.getUser_id();
+    	return "redirect:user/Projects?id="+pUser.getUser_id();
     }
     
     @RequestMapping(value = "/login", method = RequestMethod.POST)
@@ -87,7 +87,7 @@ public class ModuleAPIController {
 		if(pUser != null && pUser.getPassword().equals(request.getParameter("password")))
 		{
 			System.out.println("User found");
-			return "redirect:user/testProjects?id=" + pUser.getUser_id();
+			return "redirect:user/Projects?id=" + pUser.getUser_id();
 		}
 		else
 		{
@@ -112,6 +112,7 @@ public class ModuleAPIController {
     	pTask.setTask_id(generatePrimaryKey());
     	pTask.setTaskName(request.getParameter("taskName"));
     	pTask.setTaskDescription(request.getParameter("taskDescription"));
+    	
     	pTask.setProject(projectService.selectProject("1"));
 
     		if(memberService.selectProjectMember(request.getParameter("assigned")) != null)
@@ -129,7 +130,7 @@ public class ModuleAPIController {
     	/*if(!dbSvc.createUser(this.convertToEntity(u))) {
     		u = null;
     	}*/
-    	return "redirect:user/testProjects?id=" + request.getParameter("redirect");
+    	return "redirect:user/Projects?id=" + request.getParameter("redirect");
     }
     /**
      * 
