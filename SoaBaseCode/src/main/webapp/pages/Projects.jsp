@@ -397,7 +397,7 @@ pageEncoding="ISO-8859-1"%>
         <div class="checkbox col-md-offset-1">
             <label>
                 <input type="checkbox" name="subTask">
-                Open new connection
+                    Open new connection
             </label>
         </div>
         <div class="checkbox col-md-offset-1">
@@ -444,7 +444,7 @@ pageEncoding="ISO-8859-1"%>
 
     </div>
 
-    <div>
+    <div style="padding-left: 30px;">
         <h6 style="color: #000000">
             <b>Logs</b>
         </h6>
@@ -462,12 +462,11 @@ pageEncoding="ISO-8859-1"%>
             <div style="font-size: 13px;">Yukari set deadline to Mar 1.</div>
             <div style="color: #589ba4; font-size: 10px;">Feb 27 8:09 PM</div>
         </div>
-
     </div>
 </div>
 
 
-<div class="modal-footer">
+<div class="modal-footer" style="margin-top: 20px; padding-bottom: 30px; padding-right: 20px;">
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
     <button type="button" class="btn btn-primary" style="background-color: #589ba4">Save changes</button>
 </div>
