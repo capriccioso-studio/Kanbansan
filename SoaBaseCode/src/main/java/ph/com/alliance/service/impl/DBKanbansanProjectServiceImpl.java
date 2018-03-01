@@ -33,7 +33,6 @@ public class DBKanbansanProjectServiceImpl implements DBKanbansanProjectService{
 		try {
 			result = projectDao.createProject(em, pProject);
 			em.getTransaction().commit();
-			System.out.println("FUCK");
 		} catch (Exception e) {
 			e.printStackTrace();
 			result = false;
@@ -83,10 +82,10 @@ public class DBKanbansanProjectServiceImpl implements DBKanbansanProjectService{
 	}
 	
 	@Override
-	public Project selectProject(Project pProject)
+	public Project selectProject(String pProject)
 	{
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		return projectDao.selectProject(em, pProject.getProject_id());
+		return projectDao.selectProject(em, pProject);
 	}
 
 

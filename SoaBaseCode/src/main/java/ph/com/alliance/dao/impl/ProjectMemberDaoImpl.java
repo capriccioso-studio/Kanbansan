@@ -92,7 +92,7 @@ public class ProjectMemberDaoImpl implements ProjectMemberDao {
 
 	@Override
 	public Project_Member selectProjectMember(EntityManager pEM,
-			int pProjectMember_id) {
+			String pProjectMember_id) {
 		
 		Project_Member projectMember = null;
 		

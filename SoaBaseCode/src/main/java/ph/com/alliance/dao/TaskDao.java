@@ -12,6 +12,6 @@ public interface TaskDao {
 	
 	public boolean deleteTask(EntityManager pEM, Task pTask);
 	
-	public Task selectTask(EntityManager pEM, int pTask_id);
+	public Task selectTask(EntityManager pEM, String pTask_id);
 
 }

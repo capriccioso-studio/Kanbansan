@@ -21,12 +21,14 @@ import javax.persistence.Id;
 @Table(name="task")
 public class Task implements Serializable {
 	
+	
+	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@Column(nullable = false)
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int task_id;
+	private String task_id;
+	
 	private String taskName;
 	private String taskDescription;
 	private String taskStatus;
@@ -48,16 +50,25 @@ public class Task implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name="project_member_id")
-	private Project_Member project_member_id;
+	private Project_Member assignedMember;
 	
 	
 	
-//Constructors
-	public int getTask_id() {
+	public Project_Member getAssignedMember() {
+		return assignedMember;
+	}
+
+	public void setAssignedMember(Project_Member assignedMember) {
+		
+		this.assignedMember = assignedMember;
+	}
+
+	//Constructors
+	public String getTask_id() {
 		return task_id;
 	}
 
-	public void setTask_id(int task_id) {
+	public void setTask_id(String task_id) {
 		this.task_id = task_id;
 	}
 

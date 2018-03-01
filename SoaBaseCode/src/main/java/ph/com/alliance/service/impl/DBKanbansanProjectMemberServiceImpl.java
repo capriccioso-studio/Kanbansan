@@ -82,10 +82,10 @@ public class DBKanbansanProjectMemberServiceImpl implements DBKanbansanProjectMe
 	}
 
 	@Override
-	public Project_Member selectProjectMember(Project_Member pProjectMember) {
+	public Project_Member selectProjectMember(String pProjectMember) {
 		// TODO Auto-generated method stub
 		EntityManager em = transactionManager.getEntityManagerFactory().createEntityManager();
-		return projectMemberDao.selectProjectMember(em, pProjectMember.getProject_member_id());
+		return projectMemberDao.selectProjectMember(em, pProjectMember);
 	}
 
 }

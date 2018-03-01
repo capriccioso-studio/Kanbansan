@@ -10,6 +10,6 @@ public interface DBKanbansanProjectMemberService {
 	
 	public void deleteProjectMember(Project_Member pProjectMember);
 	
-	public Project_Member selectProjectMember(Project_Member pProjectMember);
+	public Project_Member selectProjectMember(String pProjectMember);
 	
 }
