@@ -428,7 +428,7 @@ pageEncoding="ISO-8859-1"%>
         <div class="checkbox col-md-offset-1">
             <label>
                 <input type="checkbox" name="subTask">
-                Open new connection
+                    Open new connection
             </label>
         </div>
         <div class="checkbox col-md-offset-1">
@@ -497,7 +497,7 @@ pageEncoding="ISO-8859-1"%>
 </div>
 
 
-<div class="modal-footer">
+<div class="modal-footer" style="margin-top: 20px; padding-bottom: 30px; padding-right: 20px;">
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
     <button type="button" class="btn btn-primary" style="background-color: #589ba4">Save changes</button>
 </div>
